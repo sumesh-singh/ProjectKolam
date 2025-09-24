@@ -1,19 +1,31 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Flower2 } from 'lucide-react';
+import { Menu, X, Flower2, User, LogOut } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useAuthStore } from '../store/authStore';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { isAuthenticated, user, logout } = useAuthStore();
 
-  const navItems = [
+  const publicNavItems = [
     { path: '/', label: 'Home' },
+    { path: '/gallery', label: 'Gallery' },
+    { path: '/about', label: 'About' },
+    { path: '/contact', label: 'Contact' },
+  ];
+
+  const authenticatedNavItems = [
+    { path: '/', label: 'Home' },
+    { path: '/dashboard', label: 'Dashboard' },
     { path: '/upload', label: 'Upload' },
     { path: '/gallery', label: 'Gallery' },
     { path: '/about', label: 'About' },
     { path: '/contact', label: 'Contact' },
   ];
+
+  const navItems = isAuthenticated ? authenticatedNavItems : publicNavItems;
 
   const isActive = (path: string): boolean => location.pathname === path;
 
@@ -58,6 +70,40 @@ const Header: React.FC = () => {
                 )}
               </Link>
             ))}
+
+            {/* Authentication Buttons */}
+            <div className="flex items-center space-x-4 ml-8 pl-8 border-l border-gray-300">
+              {isAuthenticated ? (
+                <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-2 text-gray-700">
+                    <User className="h-4 w-4" />
+                    <span className="font-sans font-medium">{user?.username}</span>
+                  </div>
+                  <button
+                    onClick={logout}
+                    className="flex items-center space-x-2 bg-primary-red hover:bg-red-700 text-white font-sans font-medium py-2 px-4 rounded-lg transition-colors"
+                  >
+                    <LogOut className="h-4 w-4" />
+                    <span>Sign Out</span>
+                  </button>
+                </div>
+              ) : (
+                <div className="flex items-center space-x-4">
+                  <Link
+                    to="/login"
+                    className="font-sans font-medium text-gray-700 hover:text-primary-red transition-colors"
+                  >
+                    Sign In
+                  </Link>
+                  <Link
+                    to="/register"
+                    className="bg-primary-red hover:bg-red-700 text-white font-sans font-medium py-2 px-4 rounded-lg transition-colors"
+                  >
+                    Sign Up
+                  </Link>
+                </div>
+              )}
+            </div>
           </nav>
 
           {/* Mobile menu button */}
@@ -91,6 +137,45 @@ const Header: React.FC = () => {
                   {label}
                 </Link>
               ))}
+
+              {/* Mobile Authentication */}
+              <div className="border-t border-gray-200 pt-4 mt-4">
+                {isAuthenticated ? (
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-2 px-4 py-2 text-gray-700">
+                      <User className="h-4 w-4" />
+                      <span className="font-sans font-medium">{user?.username}</span>
+                    </div>
+                    <button
+                      onClick={() => {
+                        logout();
+                        setIsMenuOpen(false);
+                      }}
+                      className="w-full flex items-center space-x-2 bg-primary-red hover:bg-red-700 text-white font-sans font-medium py-2 px-4 rounded-lg transition-colors"
+                    >
+                      <LogOut className="h-4 w-4" />
+                      <span>Sign Out</span>
+                    </button>
+                  </div>
+                ) : (
+                  <div className="space-y-2">
+                    <Link
+                      to="/login"
+                      className="block py-2 px-4 rounded-md font-sans font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Sign In
+                    </Link>
+                    <Link
+                      to="/register"
+                      className="block py-2 px-4 rounded-md font-sans font-medium bg-primary-red hover:bg-red-700 text-white transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Sign Up
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
           </motion.nav>
         )}
