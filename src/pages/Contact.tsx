@@ -29,19 +29,19 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      info: 'support@kolampatterns.com',
+      info: 'sumesh13055@gmail.com',
       description: 'Get in touch for support or questions'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      info: '+91 (044) 123-4567',
+      info: '+91 72880 81868',
       description: 'Mon-Fri 9AM-6PM IST'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      info: 'Chennai, Tamil Nadu, India',
+      info: 'Hyderabad, Telangana, India',
       description: 'Traditional Art Heritage Center'
     }
   ];

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Filter, Download, Eye, Heart } from 'lucide-react';
+import { Search, Filter, Download, Eye, Heart, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface KolamPattern {
@@ -9,6 +9,9 @@ interface KolamPattern {
   complexity: 'Beginner' | 'Intermediate' | 'Advanced';
   imageUrl: string;
   description: string;
+  region: string;
+  origin: string;
+  occasion: string;
   likes: number;
   downloads: number;
 }
@@ -16,6 +19,8 @@ interface KolamPattern {
 const Gallery: React.FC = () => {
   const [selectedFilter, setSelectedFilter] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  const [selectedPattern, setSelectedPattern] = useState<KolamPattern | null>(null);
 
   const patterns: KolamPattern[] = [
     {
@@ -23,8 +28,11 @@ const Gallery: React.FC = () => {
       name: "Lotus Pulli Kolam",
       type: "Pulli",
       complexity: "Intermediate",
-      imageUrl: "https://img-wrapper.vercel.app/image?url=https://placehold.co/300x300/B22222/FFFFFF?text=Lotus+Kolam",
-      description: "Traditional lotus pattern with intricate dot connections",
+      imageUrl: "static/lotusKolam.png",
+      description: "Traditional lotus pattern with intricate dot connections.",
+      region: "Tamil Nadu",
+      origin: "South India",
+      occasion: "Festivals and religious ceremonies",
       likes: 245,
       downloads: 89
     },
@@ -33,8 +41,11 @@ const Gallery: React.FC = () => {
       name: "Peacock Sikku",
       type: "Sikku",
       complexity: "Advanced",
-      imageUrl: "https://img-wrapper.vercel.app/image?url=https://placehold.co/300x300/3F51B5/FFFFFF?text=Peacock+Kolam",
+      imageUrl: "static/peacockKolam.png",
       description: "Elegant peacock design with flowing curves",
+      region: "Andhra Pradesh",
+      origin: "South India",
+      occasion: "Wedding ceremonies and festivals",
       likes: 192,
       downloads: 67
     },
@@ -43,8 +54,11 @@ const Gallery: React.FC = () => {
       name: "Simple Flower",
       type: "Freehand",
       complexity: "Beginner",
-      imageUrl: "https://img-wrapper.vercel.app/image?url=https://placehold.co/300x300/388E3C/FFFFFF?text=Flower+Kolam",
+      imageUrl: "static/flowerKolam.png",
       description: "Basic flower pattern perfect for beginners",
+      region: "Kerala",
+      origin: "South India",
+      occasion: "Daily household decoration",
       likes: 156,
       downloads: 124
     },
@@ -53,8 +67,11 @@ const Gallery: React.FC = () => {
       name: "Geometric Mandala",
       type: "Pulli",
       complexity: "Advanced",
-      imageUrl: "https://img-wrapper.vercel.app/image?url=https://placehold.co/300x300/FFD700/000000?text=Mandala+Kolam",
+      imageUrl: "static/mandalaKolam.jpg",
       description: "Complex geometric mandala with symmetrical patterns",
+      region: "Karnataka",
+      origin: "South India",
+      occasion: "Spiritual practices and meditation",
       likes: 312,
       downloads: 95
     },
@@ -63,8 +80,11 @@ const Gallery: React.FC = () => {
       name: "Traditional Rangoli",
       type: "Freehand",
       complexity: "Intermediate",
-      imageUrl: "https://img-wrapper.vercel.app/image?url=https://placehold.co/300x300/B22222/FFFFFF?text=Rangoli+Kolam",
+      imageUrl: "static/rangoliKolam.png",
       description: "Classic rangoli design with traditional motifs",
+      region: "Maharashtra",
+      origin: "Western India",
+      occasion: "Festival celebrations and Diwali",
       likes: 203,
       downloads: 78
     },
@@ -73,8 +93,11 @@ const Gallery: React.FC = () => {
       name: "Star Pattern",
       type: "Sikku",
       complexity: "Beginner",
-      imageUrl: "https://img-wrapper.vercel.app/image?url=https://placehold.co/300x300/3F51B5/FFFFFF?text=Star+Kolam",
+      imageUrl: "static/starKolam.png",
       description: "Simple star pattern with connecting lines",
+      region: "Tamil Nadu",
+      origin: "South India",
+      occasion: "Children's festivals and learning activities",
       likes: 187,
       downloads: 156
     }
@@ -90,9 +113,19 @@ const Gallery: React.FC = () => {
   const filteredPatterns = patterns.filter(pattern => {
     const matchesFilter = selectedFilter === 'All' || pattern.type === selectedFilter;
     const matchesSearch = pattern.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         pattern.description.toLowerCase().includes(searchTerm.toLowerCase());
+                          pattern.description.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesFilter && matchesSearch;
   });
+
+  const handleViewDetails = (pattern: KolamPattern) => {
+    setSelectedPattern(pattern);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedPattern(null);
+  };
 
   return (
     <div className="min-h-screen py-12 bg-gradient-to-br from-cream to-yellow-50">
@@ -217,7 +250,10 @@ const Gallery: React.FC = () => {
                     </div>
                   </div>
                   
-                  <button className="bg-primary-gold hover:bg-yellow-500 text-primary-red font-sans font-medium py-2 px-4 rounded-lg transition-colors text-sm">
+                  <button
+                    onClick={() => handleViewDetails(pattern)}
+                    className="bg-primary-gold hover:bg-yellow-500 text-primary-red font-sans font-medium py-2 px-4 rounded-lg transition-colors text-sm"
+                  >
                     View Details
                   </button>
                 </div>
@@ -238,6 +274,81 @@ const Gallery: React.FC = () => {
             <h3 className="font-serif text-xl text-gray-600 mb-2">No patterns found</h3>
             <p className="font-sans text-gray-500">Try adjusting your search or filter criteria</p>
           </motion.div>
+        )}
+
+        {/* Modal */}
+        {showModal && selectedPattern && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+            >
+              <div className="relative">
+                <button
+                  onClick={closeModal}
+                  className="absolute top-4 right-4 bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition-colors z-10"
+                >
+                  <X className="h-5 w-5 text-gray-600" />
+                </button>
+                <img
+                  src={selectedPattern.imageUrl}
+                  alt={selectedPattern.name}
+                  className="w-full h-64 object-cover rounded-t-2xl"
+                />
+              </div>
+
+              <div className="p-8">
+                <div className="flex items-center justify-between mb-4">
+                  <h2 className="font-serif text-3xl font-bold text-primary-red">
+                    {selectedPattern.name}
+                  </h2>
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${complexityColors[selectedPattern.complexity]}`}>
+                    {selectedPattern.complexity}
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-2">Region</h3>
+                    <p className="font-sans text-gray-600">{selectedPattern.region}</p>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-2">Origin</h3>
+                    <p className="font-sans text-gray-600">{selectedPattern.origin}</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-2">Description</h3>
+                    <p className="font-sans text-gray-600 leading-relaxed">{selectedPattern.description}</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-2">Occasion</h3>
+                    <p className="font-sans text-gray-600">{selectedPattern.occasion}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between pt-4 border-t border-gray-200">
+                  <div className="flex items-center space-x-6 text-sm text-gray-500">
+                    <div className="flex items-center">
+                      <Heart className="h-4 w-4 mr-1" />
+                      {selectedPattern.likes} likes
+                    </div>
+                    <div className="flex items-center">
+                      <Download className="h-4 w-4 mr-1" />
+                      {selectedPattern.downloads} downloads
+                    </div>
+                  </div>
+                  <div className="flex space-x-3">
+                    <button className="bg-primary-gold hover:bg-yellow-500 text-primary-red font-sans font-medium py-2 px-4 rounded-lg transition-colors">
+                      <Download className="h-4 w-4 inline mr-2" />
+                      Download
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         )}
       </div>
     </div>
