@@ -125,7 +125,7 @@ kolam-design-system/
 │   ├── services/                    # API services
 │   ├── store/                       # Zustand stores
 │   └── ...
-├── public/                          # Static assets
+├── static/                          # Static assets (images)
 ├── package.json                     # Frontend dependencies
 ├── .env                             # Environment variables
 └── README.md                        # This file
@@ -193,17 +193,16 @@ alembic upgrade head  # Run database migrations
 - `POST /api/v1/users/register` - User registration
 - `POST /api/v1/users/login` - User authentication
 - `GET /api/v1/users/me` - Current user profile
+- `PUT /api/v1/users/me` - Update current user
+- `GET /api/v1/users` - List users (admin)
+- `GET /api/v1/users/{user_id}` - Get user by ID
+- `PUT /api/v1/users/{user_id}` - Update user (admin)
+- `DELETE /api/v1/users/{user_id}` - Delete user (admin)
 
 ### Pattern Analysis
 
 - `POST /api/v1/patterns/analyze` - Analyze uploaded image
-- `GET /api/v1/patterns/analysis/{id}` - Get analysis results
-
-### Design Management
-
-- `GET /api/v1/designs` - List designs with filtering
-- `POST /api/v1/designs` - Create new design
-- `GET /api/v1/designs/{id}` - Get design details
+- `GET /api/v1/patterns/analysis/{analysis_id}` - Get analysis results
 
 ## 🎨 **Design System**
 
