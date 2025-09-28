@@ -1,0 +1,66 @@
+{
+  "file_info": {
+    "filename": "8769e0ca7466.jpg",
+    "source_url": "https://i.pinimg.com/236x/49/d5/b3/49d5b333ca8333ea3224a031bd700022.jpg",
+    "pinterest_id": "5488830792336058",
+    "file_size": 166974,
+    "resolution": "736x807",
+    "download_timestamp": "2025-09-28T15:49:28.970679"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#aeadb2",
+      "#d0d0d3",
+      "#b3b2b2",
+      "#cfcfce",
+      "#b3a9ae"
+    ],
+    "visual_complexity": 0.28,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/5488830792336058/",
+    "description": "Pin by athimoolam on Quick Saves in 2025 | Simple rangoli with dots, Simple rangoli designs images, Easy rangoli designs videos",
+    "alt_text": "Pin by athimoolam on Quick Saves in 2025 | Simple rangoli with dots, Simple rangoli designs images, Easy rangoli designs videos",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "dots",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

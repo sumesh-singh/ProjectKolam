@@ -1,0 +1,71 @@
+{
+  "file_info": {
+    "filename": "0d10af053697.jpg",
+    "source_url": "https://i.pinimg.com/236x/15/a8/06/15a80645ef2ed7393ebdb57ec68e0305.jpg",
+    "pinterest_id": "53128470598859212",
+    "file_size": 568363,
+    "resolution": "1920x1920",
+    "download_timestamp": "2025-09-28T15:51:18.744723"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "kambi_sikku",
+      "pulli",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "sikku",
+      "dots",
+      "kolam",
+      "rangoli"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#390707",
+      "#430407",
+      "#fcf1e9",
+      "#fbe8ea",
+      "#be948e"
+    ],
+    "visual_complexity": 0.26,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/53128470598859212/",
+    "description": "simple cute muggulu-daily melikala muggulu-apartment Kolam -sikkukolam in 2025 | Simple rangoli with dots, Rangoli with dots, Kolam designs",
+    "alt_text": "simple cute muggulu-daily melikala muggulu-apartment Kolam -sikkukolam in 2025 | Simple rangoli with dots, Rangoli with dots, Kolam designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "sikku",
+      "dots",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "kambi-sikku",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

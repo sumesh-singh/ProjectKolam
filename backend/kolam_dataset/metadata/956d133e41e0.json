@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "956d133e41e0.jpg",
+    "source_url": "https://i.pinimg.com/236x/d5/4d/cf/d54dcf79e5f7eb91f4248714457090d6.jpg",
+    "pinterest_id": "24066179253074610",
+    "file_size": 285053,
+    "resolution": "736x981",
+    "download_timestamp": "2025-09-28T15:42:30.557534"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#765a43",
+      "#b99e76",
+      "#0c2e1b",
+      "#bd9c19",
+      "#36291c"
+    ],
+    "visual_complexity": 0.87,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/24066179253074610/",
+    "description": "rangoli design in 2025 | Easy rangoli designs videos, Very easy rangoli designs, Simple rangoli designs images",
+    "alt_text": "rangoli design in 2025 | Easy rangoli designs videos, Very easy rangoli designs, Simple rangoli designs images",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

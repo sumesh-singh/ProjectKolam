@@ -1,0 +1,60 @@
+{
+  "file_info": {
+    "filename": "8e754fe22a03.jpg",
+    "source_url": "https://i.pinimg.com/236x/35/be/e8/35bee861bd3427cd95096f0c8ba2e863.jpg",
+    "pinterest_id": "17732992275115723",
+    "file_size": 557055,
+    "resolution": "864x890",
+    "download_timestamp": "2025-09-28T15:54:59.887824"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "kolam"
+    ],
+    "confidence_score": 0.2,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#5d5f59",
+      "#2c2d27",
+      "#5d605d",
+      "#dcdedc",
+      "#dfdfde"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/17732992275115723/",
+    "description": "Traditional Pongal Kolam | Kolam Rice",
+    "alt_text": "Traditional Pongal Kolam | Kolam Rice",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam"
+    ],
+    "suggested_tags": [
+      "tamil-nadu"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

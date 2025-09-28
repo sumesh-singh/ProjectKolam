@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "5dc1913ab579.jpg",
+    "source_url": "https://i.pinimg.com/236x/d1/c8/61/d1c861bbf195f2a86f18f0d56209bd5f.jpg",
+    "pinterest_id": "8514686791142921",
+    "file_size": 573489,
+    "resolution": "1080x1329",
+    "download_timestamp": "2025-09-28T15:59:31.282294"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#2c2012",
+      "#eeece7",
+      "#695f4f",
+      "#a49e94",
+      "#3e7333"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/8514686791142921/",
+    "description": "Ptrfashionsavenue in 2025 | Pattern design drawing, Simple rangoli border designs, Big rangoli designs",
+    "alt_text": "Ptrfashionsavenue in 2025 | Pattern design drawing, Simple rangoli border designs, Big rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

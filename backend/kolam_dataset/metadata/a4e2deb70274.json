@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "a4e2deb70274.jpg",
+    "source_url": "https://i.pinimg.com/236x/61/d3/d2/61d3d2c8814f560e9cf32f20a5c26dfb.jpg",
+    "pinterest_id": "68748690167",
+    "file_size": 6626694,
+    "resolution": "4096x3857",
+    "download_timestamp": "2025-09-28T15:42:37.249537"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "kambi_sikku",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "sikku",
+      "kolam",
+      "rangoli"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#221913",
+      "#d4daed",
+      "#615343",
+      "#221a1e",
+      "#999db1"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/68748690167/",
+    "description": "Sikku kolam in 2025 | Simple rangoli border designs, Simple rangoli designs images, Very easy rangoli designs",
+    "alt_text": "Sikku kolam in 2025 | Simple rangoli border designs, Simple rangoli designs images, Very easy rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "sikku",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "kambi-sikku",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

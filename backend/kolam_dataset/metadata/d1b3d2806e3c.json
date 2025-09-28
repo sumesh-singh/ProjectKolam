@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "d1b3d2806e3c.jpg",
+    "source_url": "https://i.pinimg.com/236x/48/b9/95/48b995b8e78a15c4f85710db6532f402.jpg",
+    "pinterest_id": "32932641014217278",
+    "file_size": 89052,
+    "resolution": "600x600",
+    "download_timestamp": "2025-09-28T15:42:43.659702"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#514322",
+      "#453a1f",
+      "#f6f1df",
+      "#61563d",
+      "#aba38f"
+    ],
+    "visual_complexity": 0.61,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/32932641014217278/",
+    "description": "Pookalam Rangoli Step 1 | Pookalam design, Very easy rangoli designs, Easy rangoli designs",
+    "alt_text": "Pookalam Rangoli Step 1 | Pookalam design, Very easy rangoli designs, Easy rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

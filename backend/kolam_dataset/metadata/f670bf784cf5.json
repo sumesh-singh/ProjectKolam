@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "f670bf784cf5.jpg",
+    "source_url": "https://i.pinimg.com/236x/44/a6/3d/44a63ddaaab8d8c9b13cc569f19a11d3.jpg",
+    "pinterest_id": "12103492742796471",
+    "file_size": 631781,
+    "resolution": "949x1004",
+    "download_timestamp": "2025-09-28T16:00:12.068863"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#72634d",
+      "#a7977d",
+      "#e5e1d6",
+      "#422d1f",
+      "#938165"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/12103492742796471/",
+    "description": "Pin by Selvi Priyadharshini on kollam in 2025 | Rangoli designs simple diwali, Simple rangoli designs images, Easy rangoli designs videos",
+    "alt_text": "Pin by Selvi Priyadharshini on kollam in 2025 | Rangoli designs simple diwali, Simple rangoli designs images, Easy rangoli designs videos",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

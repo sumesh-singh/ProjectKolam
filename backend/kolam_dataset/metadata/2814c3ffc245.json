@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "2814c3ffc245.jpg",
+    "source_url": "https://i.pinimg.com/236x/3d/c1/0a/3dc10ad8b583ff20ee1c9e6100d2f87f.jpg",
+    "pinterest_id": "13510867626760670",
+    "file_size": 123527,
+    "resolution": "564x522",
+    "download_timestamp": "2025-09-28T15:47:13.060708"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#ad988a",
+      "#3c044b",
+      "#daccc0",
+      "#907254",
+      "#ded0d9"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/13510867626760670/",
+    "description": "diwali rangoli | Very easy rangoli designs, Easy rangoli designs videos, Simple flower design",
+    "alt_text": "diwali rangoli | Very easy rangoli designs, Easy rangoli designs videos, Simple flower design",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "file_info": {
+    "filename": "c671b8d1e126.jpg",
+    "source_url": "https://i.pinimg.com/236x/53/2e/17/532e173ad1b558df01d29f1d1aa63771.jpg",
+    "pinterest_id": "351912464729583",
+    "file_size": 414729,
+    "resolution": "1080x1440",
+    "download_timestamp": "2025-09-28T15:59:50.545723"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "free hand"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#2d1a09",
+      "#695a41",
+      "#af9e84",
+      "#dfd9ca",
+      "#514522"
+    ],
+    "visual_complexity": 0.89,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/351912464729583/",
+    "description": "Free Hand Rangoli Design for Diwali",
+    "alt_text": "Free Hand Rangoli Design for Diwali",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

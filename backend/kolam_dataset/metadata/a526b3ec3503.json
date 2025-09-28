@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "a526b3ec3503.jpg",
+    "source_url": "https://i.pinimg.com/236x/c0/5d/87/c05d876a5d991e8945f34877a1844e1d.jpg",
+    "pinterest_id": "4644405860004646",
+    "file_size": 219414,
+    "resolution": "700x700",
+    "download_timestamp": "2025-09-28T15:42:37.752321"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#994432",
+      "#093908",
+      "#e79932",
+      "#970e08",
+      "#cf9816"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/4644405860004646/",
+    "description": "Onam Pookalam Designs | Onam Flowers Rangoli Designs | Pookalam Designs… | Easy rangoli designs videos, Simple rangoli designs images, Rangoli designs simple diwali",
+    "alt_text": "Onam Pookalam Designs | Onam Flowers Rangoli Designs | Pookalam Designs… | Easy rangoli designs videos, Simple rangoli designs images, Rangoli designs simple diwali",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

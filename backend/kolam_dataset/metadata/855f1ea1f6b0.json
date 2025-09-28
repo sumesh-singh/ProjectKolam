@@ -1,0 +1,66 @@
+{
+  "file_info": {
+    "filename": "855f1ea1f6b0.jpg",
+    "source_url": "https://i.pinimg.com/236x/13/a8/be/13a8be93623bbc1862bc3e50c0737e22.jpg",
+    "pinterest_id": "3729612187320245",
+    "file_size": 453394,
+    "resolution": "1200x1080",
+    "download_timestamp": "2025-09-28T15:45:44.010670"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "free hand"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#130f0c",
+      "#191315",
+      "#d8d9de",
+      "#5d5a57",
+      "#a1a2a7"
+    ],
+    "visual_complexity": 0.6,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/3729612187320245/",
+    "description": "Free Hand Rangoli Design | Rangoli side designs, Rangoli designs latest, Free hand rangoli design",
+    "alt_text": "Free Hand Rangoli Design | Rangoli side designs, Rangoli designs latest, Free hand rangoli design",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

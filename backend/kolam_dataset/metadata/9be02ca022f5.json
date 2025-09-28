@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "9be02ca022f5.jpg",
+    "source_url": "https://i.pinimg.com/236x/61/f2/12/61f212454fc3e9d0882565e483bfe073.jpg",
+    "pinterest_id": "70437490003703",
+    "file_size": 216981,
+    "resolution": "1080x1039",
+    "download_timestamp": "2025-09-28T15:46:58.676885"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#291f18",
+      "#595048",
+      "#dce3e7",
+      "#565a5e",
+      "#2b2d31"
+    ],
+    "visual_complexity": 0.4,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/70437490003703/",
+    "description": "Simple Rangoli Border Designs for Diwali",
+    "alt_text": "Simple Rangoli Border Designs for Diwali",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

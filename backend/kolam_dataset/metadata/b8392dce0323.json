@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "b8392dce0323.jpg",
+    "source_url": "https://i.pinimg.com/236x/1e/13/57/1e135753704b3bca3c02db6f7354aa8a.jpg",
+    "pinterest_id": "81698180737323181",
+    "file_size": 451210,
+    "resolution": "1080x1080",
+    "download_timestamp": "2025-09-28T15:45:04.097524"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "free hand",
+      "kolam"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#815031",
+      "#c49168",
+      "#8cae12",
+      "#562d17",
+      "#ead7c3"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/81698180737323181/",
+    "description": "Post from Ammu Kolam in 2025 | Free hand rangoli design, Simple rangoli designs images, Easy rangoli designs videos",
+    "alt_text": "Post from Ammu Kolam in 2025 | Free hand rangoli design, Simple rangoli designs images, Easy rangoli designs videos",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "file_info": {
+    "filename": "687cea3b67c3.jpg",
+    "source_url": "https://i.pinimg.com/236x/f8/45/bf/f845bf4d7f8b6ebe6356999b8837f92f.jpg",
+    "pinterest_id": "3729612266330548",
+    "file_size": 242798,
+    "resolution": "895x587",
+    "download_timestamp": "2025-09-28T15:48:39.945546"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "kolam"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#37322c",
+      "#524e46",
+      "#dfe5ea",
+      "#585c61",
+      "#999fa4"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/3729612266330548/",
+    "description": "Pin by Kalaivani Vijayaprabhu on daily kolam in 2025 | Pattern design drawing, Flower drawing design, Very easy rangoli designs",
+    "alt_text": "Pin by Kalaivani Vijayaprabhu on daily kolam in 2025 | Pattern design drawing, Flower drawing design, Very easy rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

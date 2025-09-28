@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "ba6698bc388e.jpg",
+    "source_url": "https://i.pinimg.com/236x/61/9f/f3/619ff3beaf9fbc1cdc8bed72d24f6646.jpg",
+    "pinterest_id": "180003317635293393",
+    "file_size": 264476,
+    "resolution": "1126x1126",
+    "download_timestamp": "2025-09-28T15:50:59.189293"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "dot kolam",
+      "kolam"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#b70102",
+      "#f9f6ef",
+      "#af0504",
+      "#c19a95",
+      "#f8fdf8"
+    ],
+    "visual_complexity": 0.37,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/180003317635293393/",
+    "description": "Dot Kolam, Rangoli, Indian Traditional Art Art Print | Geometric pattern art, Rangoli designs flower, Art prints",
+    "alt_text": "Dot Kolam, Rangoli, Indian Traditional Art Art Print | Geometric pattern art, Rangoli designs flower, Art prints",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dot kolam",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

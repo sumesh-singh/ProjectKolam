@@ -1,0 +1,69 @@
+{
+  "file_info": {
+    "filename": "85207db1cdef.jpg",
+    "source_url": "https://i.pinimg.com/236x/06/bb/69/06bb6982fc135852279a46cb5c41e30b.jpg",
+    "pinterest_id": "180003317644646423",
+    "file_size": 241546,
+    "resolution": "1500x1500",
+    "download_timestamp": "2025-09-28T15:51:54.611535"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam",
+      "dot kolam"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#ab2027",
+      "#fcfaf9",
+      "#a22d35",
+      "#fafefc",
+      "#fdecee"
+    ],
+    "visual_complexity": 0.19,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/180003317644646423/",
+    "description": "Dot Kolam, Rangoli, Muggu Sticker in 2025 | Rangoli designs, Dots, Kolam designs",
+    "alt_text": "Dot Kolam, Rangoli, Muggu Sticker in 2025 | Rangoli designs, Dots, Kolam designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "dot kolam",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

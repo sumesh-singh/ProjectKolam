@@ -1,0 +1,66 @@
+{
+  "file_info": {
+    "filename": "73b67440d276.jpg",
+    "source_url": "https://i.pinimg.com/236x/8e/30/e1/8e30e10b989345e02ee6f0625bb1951b.jpg",
+    "pinterest_id": "3729612268791675",
+    "file_size": 490666,
+    "resolution": "1024x1024",
+    "download_timestamp": "2025-09-28T15:42:34.091627"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "free hand"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#815d3b",
+      "#ae977d",
+      "#ecdfce",
+      "#391c17",
+      "#ac8942"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/3729612268791675/",
+    "description": "Rangoli design in 2025 | Flower drawing design, Free hand rangoli design, Rangoli border designs",
+    "alt_text": "Rangoli design in 2025 | Flower drawing design, Free hand rangoli design, Rangoli border designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "file_info": {
+    "filename": "f7d1276df4af.jpg",
+    "source_url": "https://i.pinimg.com/236x/e6/9a/1d/e69a1d965a440ed1f83feff6b9268b5f.jpg",
+    "pinterest_id": "44473115064717678",
+    "file_size": 560544,
+    "resolution": "1280x720",
+    "download_timestamp": "2025-09-28T15:44:40.134614"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "free hand"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#7e5c4b",
+      "#3d668e",
+      "#ad0b34",
+      "#c49a5f",
+      "#79505c"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/44473115064717678/",
+    "description": "Rangoli tutorial ✨#menteemaha #rangoli #art in 2025 | Free hand rangoli design, Simple flower rangoli, Rangoli designs simple diwali",
+    "alt_text": "Rangoli tutorial ✨#menteemaha #rangoli #art in 2025 | Free hand rangoli design, Simple flower rangoli, Rangoli designs simple diwali",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "file_info": {
+    "filename": "7a8cf548407b.jpg",
+    "source_url": "https://i.pinimg.com/236x/3c/60/aa/3c60aaf8792966285871bdbb770b4f22.jpg",
+    "pinterest_id": "15481192463480650",
+    "file_size": 769792,
+    "resolution": "1440x1800",
+    "download_timestamp": "2025-09-28T15:52:53.407003"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "kambi_sikku",
+      "pulli",
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "kolam",
+      "rangoli",
+      "dots",
+      "padi",
+      "sikku",
+      "free hand"
+    ],
+    "confidence_score": 1.0,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#c59a75",
+      "#866954",
+      "#10192f",
+      "#ebd8c6",
+      "#3b1d0a"
+    ],
+    "visual_complexity": 0.75,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/15481192463480650/",
+    "description": "Purnima on Instagram: \"Kolam  @purnima__mehndi  #art #kolam #kolamdesign #kolamwithdots #dotkolam #muggulu #mugguluwithdots #mugguludesigns #padikolam #sikkukol… in 2025 | Rangoli designs with dots, Free hand rangoli design, Simple rangoli designs images",
+    "alt_text": "Purnima on Instagram: \"Kolam  @purnima__mehndi  #art #kolam #kolamdesign #kolamwithdots #dotkolam #muggulu #mugguluwithdots #mugguludesigns #padikolam #sikkukol… in 2025 | Rangoli designs with dots, Free hand rangoli design, Simple rangoli designs images",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "sikku",
+      "dots",
+      "padi",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "kambi-sikku",
+      "pulli",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

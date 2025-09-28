@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "1ced6f7eaaf2.jpg",
+    "source_url": "https://i.pinimg.com/236x/3e/96/db/3e96db698e15ef9364ed1bf89783d75a.jpg",
+    "pinterest_id": "2181499815557819",
+    "file_size": 288966,
+    "resolution": "1080x1080",
+    "download_timestamp": "2025-09-28T15:49:40.047665"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#0e0a06",
+      "#111915",
+      "#dbebef",
+      "#dcebe8",
+      "#161d21"
+    ],
+    "visual_complexity": 0.72,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/2181499815557819/",
+    "description": "Pin by Woolfie-art on rangoli | Simple art designs, Easy rangoli designs videos, Very easy rangoli designs",
+    "alt_text": "Pin by Woolfie-art on rangoli | Simple art designs, Easy rangoli designs videos, Very easy rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

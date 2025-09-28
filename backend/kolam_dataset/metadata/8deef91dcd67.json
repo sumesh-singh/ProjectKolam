@@ -1,0 +1,64 @@
+{
+  "file_info": {
+    "filename": "8deef91dcd67.jpg",
+    "source_url": "https://i.pinimg.com/236x/84/45/54/8445540d81492d05c86493c61657f4da.jpg",
+    "pinterest_id": "15270086226105931",
+    "file_size": 105611,
+    "resolution": "565x592",
+    "download_timestamp": "2025-09-28T15:50:49.096885"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "kolam",
+      "pulli"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#000000",
+      "#030208",
+      "#f4f4f7",
+      "#f7f8f7",
+      "#f8faf9"
+    ],
+    "visual_complexity": 0.56,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/15270086226105931/",
+    "description": "Neer Pulli Kolam No.360",
+    "alt_text": "Neer Pulli Kolam No.360",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "pulli",
+      "pulli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "file_info": {
+    "filename": "c7a6903299f9.jpg",
+    "source_url": "https://i.pinimg.com/236x/b1/d9/93/b1d9937ab9adc9b14fe0dc1c43fc447e.jpg",
+    "pinterest_id": "448741550397900905",
+    "file_size": 1531841,
+    "resolution": "2440x2448",
+    "download_timestamp": "2025-09-28T15:56:12.092779"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "freehand"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#250207",
+      "#281410",
+      "#d5cec9",
+      "#b1a9a4",
+      "#61534e"
+    ],
+    "visual_complexity": 0.58,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/448741550397900905/",
+    "description": "Contemporary padi Kolam in 2025 | Padi kolam, Padi, Ganesha",
+    "alt_text": "Contemporary padi Kolam in 2025 | Padi kolam, Padi, Ganesha",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "padi"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "freehand"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

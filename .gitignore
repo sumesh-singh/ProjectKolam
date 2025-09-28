@@ -3,3 +3,8 @@ node_modules/
 .env.local
 .env.production
 backend/.env
+env
+backend/env
+backend/pinterest-kolam-scraper.py
+backend/google-rangoli-scraper.py
+backend/rangoli_collection/

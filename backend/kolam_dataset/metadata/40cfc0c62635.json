@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "40cfc0c62635.jpg",
+    "source_url": "https://i.pinimg.com/236x/9b/8c/f0/9b8cf0ae10934958dedfdd2cf96aab66.jpg",
+    "pinterest_id": "140806233951665",
+    "file_size": 188969,
+    "resolution": "564x564",
+    "download_timestamp": "2025-09-28T15:54:12.409602"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#4f5d53",
+      "#29372e",
+      "#585b4b",
+      "#98a7a0",
+      "#333222"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/140806233951665/",
+    "description": "MukilMathi(M.MKolam) on Instagram: \"Today my home entrance kolam...✨ Step by step kolam...☺️✨♥️  Dots: 6(2)-2 straight dots Swipe step by step images @kolamby_m… in 2025 | Pattern design drawing, Easy rangoli designs videos, Simple rangoli border designs",
+    "alt_text": "MukilMathi(M.MKolam) on Instagram: \"Today my home entrance kolam...✨ Step by step kolam...☺️✨♥️  Dots: 6(2)-2 straight dots Swipe step by step images @kolamby_m… in 2025 | Pattern design drawing, Easy rangoli designs videos, Simple rangoli border designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

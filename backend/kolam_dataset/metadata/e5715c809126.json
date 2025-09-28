@@ -1,0 +1,54 @@
+{
+  "file_info": {
+    "filename": "e5715c809126.jpg",
+    "source_url": "https://i.pinimg.com/videos/thumbnails/originals/bd/fc/bb/bdfcbba5c9af8af4096d128d6cdc6967.0000000.jpg",
+    "pinterest_id": "1095289571850861132",
+    "file_size": 84317,
+    "resolution": "720x1280",
+    "download_timestamp": "2025-09-28T15:53:08.478344"
+  },
+  "kolam_properties": {
+    "region": "unclassified",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [],
+    "confidence_score": 0.0,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#ddccba",
+      "#ac9e8f",
+      "#82563f",
+      "#421e15",
+      "#cfc0ad"
+    ],
+    "visual_complexity": 0.15,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/1095289571850861132/",
+    "description": "This may contain: someone is writing something on a piece of paper with a pen and some beads hanging from it",
+    "alt_text": "This may contain: someone is writing something on a piece of paper with a pen and some beads hanging from it",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [],
+    "suggested_tags": []
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

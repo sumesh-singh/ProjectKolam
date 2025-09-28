@@ -1,0 +1,74 @@
+{
+  "file_info": {
+    "filename": "5bf4af835014.jpg",
+    "source_url": "https://i.pinimg.com/236x/4d/06/05/4d06052257ef3469563a41004c953e9b.jpg",
+    "pinterest_id": "4714774604062656",
+    "file_size": 127155,
+    "resolution": "540x960",
+    "download_timestamp": "2025-09-28T15:40:19.933266"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "kambi_sikku",
+      "pulli",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "kolam",
+      "rangoli",
+      "dots",
+      "kambi",
+      "sikku"
+    ],
+    "confidence_score": 1.0,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#695b62",
+      "#2b201e",
+      "#a58c9b",
+      "#372a2e",
+      "#6b5853"
+    ],
+    "visual_complexity": 0.63,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/4714774604062656/",
+    "description": "DB's Kaivannam on Instagram: \"Simple and Beautiful Sikkukolam using 7-1 straight dots #kolam #kambikolam #sikkukolam #rangoli #muggulu #dotkolam #dotrangoli #ea… | Simple flower design, Simple rangoli border designs, Small rangoli design",
+    "alt_text": "DB's Kaivannam on Instagram: \"Simple and Beautiful Sikkukolam using 7-1 straight dots #kolam #kambikolam #sikkukolam #rangoli #muggulu #dotkolam #dotrangoli #ea… | Simple flower design, Simple rangoli border designs, Small rangoli design",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "kambi",
+      "kambi",
+      "sikku",
+      "dots",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "kambi-sikku",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

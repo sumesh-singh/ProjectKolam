@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "6e4bb2398815.jpg",
+    "source_url": "https://i.pinimg.com/236x/49/fb/18/49fb1841b83db76e8de9aa4cb664d8a9.jpg",
+    "pinterest_id": "355643701849344363",
+    "file_size": 167159,
+    "resolution": "640x640",
+    "download_timestamp": "2025-09-28T15:56:44.033305"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#682c23",
+      "#5e2116",
+      "#704640",
+      "#aea2a6",
+      "#ad9e9b"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/355643701849344363/",
+    "description": "Mrs & Mr.Kolam on Instagram: \"Here is our traditional padi for today! ❤️  Thank you dearest @8tonty Sumathy Ji for the beautiful design! 😍  Have a lovely day a… | Kolam designs, Rangoli designs, Indian art",
+    "alt_text": "Mrs & Mr.Kolam on Instagram: \"Here is our traditional padi for today! ❤️  Thank you dearest @8tonty Sumathy Ji for the beautiful design! 😍  Have a lovely day a… | Kolam designs, Rangoli designs, Indian art",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "padi",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "file_info": {
+    "filename": "76a8771b30c0.jpg",
+    "source_url": "https://i.pinimg.com/236x/8c/d6/a0/8cd6a0639756b8cba51a320c31bda06a.jpg",
+    "pinterest_id": "4714774603060520",
+    "file_size": 379506,
+    "resolution": "1200x1200",
+    "download_timestamp": "2025-09-28T15:53:58.450718"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "kolam"
+    ],
+    "confidence_score": 0.2,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#b75e06",
+      "#d0830d",
+      "#d99f45",
+      "#f7e7ca",
+      "#e6c38b"
+    ],
+    "visual_complexity": 0.3,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/4714774603060520/",
+    "description": "Cute Mini Apartment Kolam | Sunrisehack",
+    "alt_text": "Cute Mini Apartment Kolam | Sunrisehack",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam"
+    ],
+    "suggested_tags": [
+      "tamil-nadu"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

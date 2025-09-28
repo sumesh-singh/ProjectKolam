@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "244cf9051693.jpg",
+    "source_url": "https://i.pinimg.com/236x/a5/78/bb/a578bb29d8c042cfc1ddb1c77de8e29f.jpg",
+    "pinterest_id": "262616222018868499",
+    "file_size": 440635,
+    "resolution": "1200x1200",
+    "download_timestamp": "2025-09-28T15:54:29.064337"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "freehand"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "dots",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#030302",
+      "#e7e4e3",
+      "#a49f9d",
+      "#635c59",
+      "#2d0c0e"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/262616222018868499/",
+    "description": "Rathnamenaka Karunanidhi on Instagram: \"Friday kolam #padikolam #with #dots #traditional #kolam #fridaykolam #sacredgeometry #kolambymangai #kolamenthusiasts #k…, 2025",
+    "alt_text": "Rathnamenaka Karunanidhi on Instagram: \"Friday kolam #padikolam #with #dots #traditional #kolam #fridaykolam #sacredgeometry #kolambymangai #kolamenthusiasts #k…, 2025",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "padi"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "freehand"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

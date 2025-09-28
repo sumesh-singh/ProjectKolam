@@ -1,0 +1,63 @@
+{
+  "file_info": {
+    "filename": "5ab92880bf72.jpg",
+    "source_url": "https://i.pinimg.com/videos/thumbnails/originals/3f/59/e6/3f59e659d1bd0477b11df4f3e1bd6777.0000000.jpg",
+    "pinterest_id": "886435139130388747",
+    "file_size": 69656,
+    "resolution": "1080x1920",
+    "download_timestamp": "2025-09-28T15:46:07.430555"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "dots",
+      "kolam"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#572339",
+      "#5d2c3e",
+      "#efdae4",
+      "#704958",
+      "#b394a1"
+    ],
+    "visual_complexity": 0.04,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/886435139130388747/",
+    "description": "This may contain: the book cover for 101 to 2 dots by kolama, which is written in white",
+    "alt_text": "This may contain: the book cover for 101 to 2 dots by kolama, which is written in white",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

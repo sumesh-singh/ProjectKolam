@@ -1,0 +1,383 @@
+2025-09-28 15:27:17,259 - PinterestKolamScraper - INFO - Starting Pinterest Kolam Scraper
+2025-09-28 15:27:17,259 - PinterestKolamScraper - INFO - Configuration: {'image_limit': 500, 'base_directory': './kolam_dataset', 'search_queries': ['kolam designs', 'rangoli patterns', 'muggulu designs', 'sikku kolam', 'pulli kolam', 'padi kolam'], 'min_resolution': (500, 500), 'headless': False, 'scroll_pause_time': 2.0, 'max_workers': 5, 'retry_attempts': 3, 'rate_limit_delay': 0.5}
+2025-09-28 15:27:52,491 - selenium.webdriver.common.selenium_manager - WARNING - Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+2025-09-28 15:27:55,226 - PinterestKolamScraper - INFO - WebDriver initialized
+2025-09-28 15:27:55,230 - PinterestKolamScraper - INFO - Processing query: kolam designs
+2025-09-28 15:28:05,011 - PinterestKolamScraper - INFO - Searching for: kolam designs
+2025-09-28 15:30:08,144 - PinterestKolamScraper - INFO - Collected 74 images for query: kolam designs
+2025-09-28 15:30:13,145 - PinterestKolamScraper - INFO - Processing query: rangoli patterns
+2025-09-28 15:30:29,586 - PinterestKolamScraper - INFO - Searching for: rangoli patterns
+2025-09-28 15:32:28,024 - PinterestKolamScraper - INFO - Collected 44 images for query: rangoli patterns
+2025-09-28 15:32:33,026 - PinterestKolamScraper - INFO - Processing query: muggulu designs
+2025-09-28 15:32:42,465 - PinterestKolamScraper - INFO - Searching for: muggulu designs
+2025-09-28 15:34:01,071 - PinterestKolamScraper - INFO - Collected 83 images for query: muggulu designs
+2025-09-28 15:34:06,075 - PinterestKolamScraper - INFO - Processing query: sikku kolam
+2025-09-28 15:34:19,431 - PinterestKolamScraper - INFO - Searching for: sikku kolam
+2025-09-28 15:36:12,688 - PinterestKolamScraper - INFO - Collected 11 images for query: sikku kolam
+2025-09-28 15:36:17,690 - PinterestKolamScraper - INFO - Processing query: pulli kolam
+2025-09-28 15:36:29,399 - PinterestKolamScraper - INFO - Searching for: pulli kolam
+2025-09-28 15:38:16,492 - PinterestKolamScraper - INFO - Collected 83 images for query: pulli kolam
+2025-09-28 15:38:21,494 - PinterestKolamScraper - INFO - Processing query: padi kolam
+2025-09-28 15:38:26,955 - PinterestKolamScraper - INFO - Searching for: padi kolam
+2025-09-28 15:38:42,056 - PinterestKolamScraper - INFO - Collected 83 images for query: padi kolam
+2025-09-28 15:38:47,059 - PinterestKolamScraper - INFO - Total images collected: 378
+2025-09-28 15:38:51,037 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\ee2b2bdee6b2.jpg
+2025-09-28 15:38:51,046 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\a844aa396274.jpg
+2025-09-28 15:38:52,276 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:38:52,598 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\7007761d34f9.jpg
+2025-09-28 15:38:53,162 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\8c81b37a4255.jpg
+2025-09-28 15:39:03,982 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\d6ce8c5f6119.jpg
+2025-09-28 15:39:04,158 - PinterestKolamScraper - WARNING - Image below minimum resolution: (378, 494)
+2025-09-28 15:39:06,552 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:39:07,608 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\c440de5cf5ce.jpg
+2025-09-28 15:39:09,146 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:39:10,272 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:39:11,513 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:39:12,590 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:39:13,971 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\cbcfc1b5c40a.jpg
+2025-09-28 15:39:16,449 - PinterestKolamScraper - WARNING - Image below minimum resolution: (344, 258)
+2025-09-28 15:39:18,236 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\2c085eca9066.jpg
+2025-09-28 15:39:19,902 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\ce0bf5c7cedc.jpg
+2025-09-28 15:39:22,621 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\adae7ff64159.jpg
+2025-09-28 15:39:26,371 - PinterestKolamScraper - WARNING - Image below minimum resolution: (236, 212)
+2025-09-28 15:39:28,954 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\dcb4fef80c3e.jpg
+2025-09-28 15:39:39,655 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\17c6668cccfb.jpg
+2025-09-28 15:39:49,029 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:39:49,979 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\47cbaa213298.jpg
+2025-09-28 15:39:50,088 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:39:54,047 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:40:09,887 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\27c2aef552d7.jpg
+2025-09-28 15:40:16,713 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\7c6cae0ac089.jpg
+2025-09-28 15:40:19,755 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\5bf4af835014.jpg
+2025-09-28 15:40:28,595 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:40:31,691 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:40:32,484 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:40:33,429 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:40:34,558 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:40:35,566 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:40:36,417 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:40:37,609 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:40:40,588 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\f58af8e98387.jpg
+2025-09-28 15:40:54,652 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:40:56,546 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\6a053b4a91cf.jpg
+2025-09-28 15:41:06,010 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\1776fb0aa192.jpg
+2025-09-28 15:41:27,251 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\55ee2a3e01ed.jpg
+2025-09-28 15:41:27,939 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\88e6fa0c91e6.jpg
+2025-09-28 15:41:40,902 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\6c46f58f2a72.jpg
+2025-09-28 15:41:50,700 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:41:52,292 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\85302a6de671.jpg
+2025-09-28 15:41:55,451 - PinterestKolamScraper - WARNING - Image below minimum resolution: (290, 316)
+2025-09-28 15:41:56,335 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:41:57,006 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:41:57,218 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\5aa86968745b.jpg
+2025-09-28 15:41:57,240 - PinterestKolamScraper - WARNING - Image below minimum resolution: (439, 501)
+2025-09-28 15:41:57,677 - PinterestKolamScraper - WARNING - Image below minimum resolution: (228, 221)
+2025-09-28 15:41:58,293 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:41:58,590 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:41:59,052 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:41:59,365 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:41:59,909 - PinterestKolamScraper - WARNING - Image below minimum resolution: (500, 442)
+2025-09-28 15:42:00,372 - PinterestKolamScraper - WARNING - Image below minimum resolution: (360, 640)
+2025-09-28 15:42:01,503 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\5ff713489d52.jpg
+2025-09-28 15:42:01,591 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:42:02,419 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:42:03,674 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:42:05,158 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\23a8a0adba90.jpg
+2025-09-28 15:42:09,740 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\50d5aeab78a2.jpg
+2025-09-28 15:42:14,012 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\kerala\0b228aefc85e.jpg
+2025-09-28 15:42:19,457 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\65c5cc8d12bd.jpg
+2025-09-28 15:42:24,162 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\a26819df0f4d.jpg
+2025-09-28 15:42:24,515 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\4dbcda0f0839.jpg
+2025-09-28 15:42:29,875 - PinterestKolamScraper - WARNING - Image below minimum resolution: (473, 426)
+2025-09-28 15:42:30,347 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\bff8192ca808.jpg
+2025-09-28 15:42:30,457 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\956d133e41e0.jpg
+2025-09-28 15:42:33,913 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\73b67440d276.jpg
+2025-09-28 15:42:37,028 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\a4e2deb70274.jpg
+2025-09-28 15:42:37,626 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\a526b3ec3503.jpg
+2025-09-28 15:42:38,084 - PinterestKolamScraper - WARNING - Image below minimum resolution: (380, 541)
+2025-09-28 15:42:38,989 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\9f447d3224fe.jpg
+2025-09-28 15:42:43,519 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\d1b3d2806e3c.jpg
+2025-09-28 15:42:43,604 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\17a3d6c70a75.jpg
+2025-09-28 15:42:48,040 - PinterestKolamScraper - WARNING - Image below minimum resolution: (420, 595)
+2025-09-28 15:42:50,357 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\5464ebf6c3b6.jpg
+2025-09-28 15:42:51,672 - PinterestKolamScraper - WARNING - Image below minimum resolution: (640, 480)
+2025-09-28 15:42:53,287 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\db811d7d50ef.jpg
+2025-09-28 15:43:06,773 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:43:07,087 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:43:07,336 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\bce11350af68.jpg
+2025-09-28 15:43:07,767 - PinterestKolamScraper - WARNING - Image below minimum resolution: (350, 350)
+2025-09-28 15:43:08,087 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\cbd67a2679b0.jpg
+2025-09-28 15:43:09,315 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\d69ec0b351e7.jpg
+2025-09-28 15:43:10,291 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\kerala\d5919e0b9d4a.jpg
+2025-09-28 15:43:24,611 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:43:25,389 - PinterestKolamScraper - WARNING - Image below minimum resolution: (350, 350)
+2025-09-28 15:43:26,070 - PinterestKolamScraper - WARNING - Image below minimum resolution: (360, 640)
+2025-09-28 15:43:26,665 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\c7d319e9cd4a.jpg
+2025-09-28 15:43:28,005 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\2d14b6ed373b.jpg
+2025-09-28 15:43:29,771 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\27a39aa7ca30.jpg
+2025-09-28 15:43:40,129 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\be1abdc70bd9.jpg
+2025-09-28 15:44:00,184 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\6ce6e89be1f5.jpg
+2025-09-28 15:44:00,602 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\f17da5c5505e.jpg
+2025-09-28 15:44:17,015 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\kerala\dcdcf5bb0ecb.jpg
+2025-09-28 15:44:32,894 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\37c8189765f8.jpg
+2025-09-28 15:44:36,733 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\a4519dd83723.jpg
+2025-09-28 15:44:39,586 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\f7d1276df4af.jpg
+2025-09-28 15:44:48,788 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\0ec180e95338.jpg
+2025-09-28 15:44:52,740 - PinterestKolamScraper - WARNING - Image below minimum resolution: (360, 640)
+2025-09-28 15:44:54,365 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\207667458ce8.jpg
+2025-09-28 15:44:54,452 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\2d8217e39fe5.jpg
+2025-09-28 15:45:02,665 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:03,931 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\b8392dce0323.jpg
+2025-09-28 15:45:04,050 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:45:05,098 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:05,933 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:06,960 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\cbf01ecd1799.jpg
+2025-09-28 15:45:07,005 - PinterestKolamScraper - WARNING - Image below minimum resolution: (344, 258)
+2025-09-28 15:45:07,604 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:08,429 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:10,835 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\58229f1534b5.jpg
+2025-09-28 15:45:11,250 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:12,444 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:13,196 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:45:14,551 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:15,400 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:16,650 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\68395219edb8.jpg
+2025-09-28 15:45:17,633 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:18,900 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:45:20,042 - PinterestKolamScraper - WARNING - Image below minimum resolution: (360, 640)
+2025-09-28 15:45:21,631 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:22,785 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:45:25,784 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\544837c6f8a8.jpg
+2025-09-28 15:45:27,015 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:45:27,935 - PinterestKolamScraper - WARNING - Image below minimum resolution: (473, 426)
+2025-09-28 15:45:28,065 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\8044ccd8e433.jpg
+2025-09-28 15:45:28,538 - PinterestKolamScraper - WARNING - Image below minimum resolution: (236, 212)
+2025-09-28 15:45:29,328 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:45:29,856 - PinterestKolamScraper - WARNING - Image below minimum resolution: (375, 349)
+2025-09-28 15:45:30,419 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:31,228 - PinterestKolamScraper - WARNING - Image below minimum resolution: (236, 419)
+2025-09-28 15:45:32,545 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\cc6159d52bb1.jpg
+2025-09-28 15:45:39,213 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\5f1757b50813.jpg
+2025-09-28 15:45:41,939 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:41,987 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:42,507 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:45:42,600 - PinterestKolamScraper - WARNING - Image below minimum resolution: (473, 266)
+2025-09-28 15:45:42,623 - PinterestKolamScraper - WARNING - Image below minimum resolution: (563, 493)
+2025-09-28 15:45:43,001 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\6310e47fd786.jpg
+2025-09-28 15:45:43,117 - PinterestKolamScraper - WARNING - Image below minimum resolution: (392, 672)
+2025-09-28 15:45:43,682 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\855f1ea1f6b0.jpg
+2025-09-28 15:45:43,962 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\2538d282cbb8.jpg
+2025-09-28 15:45:51,249 - root - ERROR - Error extracting color palette: Python int too large to convert to C long
+2025-09-28 15:45:55,126 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\185ba00ac303.jpg
+2025-09-28 15:45:55,174 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\bde5acb00ac4.jpg
+2025-09-28 15:46:01,092 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:46:02,316 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\1501b7df5b37.jpg
+2025-09-28 15:46:02,492 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\andhra_telangana\2dcf37502fb9.jpg
+2025-09-28 15:46:07,050 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:46:07,147 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\40420b1e1e4f.jpg
+2025-09-28 15:46:07,381 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\5ab92880bf72.jpg
+2025-09-28 15:46:08,316 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\190e0412b512.jpg
+2025-09-28 15:46:29,552 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:46:40,498 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\b0e967b2dd4b.jpg
+2025-09-28 15:46:41,416 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\784fa01427c0.jpg
+2025-09-28 15:46:49,785 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\72d32eea286f.jpg
+2025-09-28 15:46:57,197 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:46:58,518 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\9be02ca022f5.jpg
+2025-09-28 15:46:58,661 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\87eab1f3acd2.jpg
+2025-09-28 15:47:11,694 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:47:12,906 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\2814c3ffc245.jpg
+2025-09-28 15:47:18,074 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:47:19,323 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\5e911cf8304f.jpg
+2025-09-28 15:47:28,213 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\4d0a12336015.jpg
+2025-09-28 15:47:42,291 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\95951df27a08.jpg
+2025-09-28 15:47:44,529 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\e875e6da8101.jpg
+2025-09-28 15:47:54,922 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\30126a462608.jpg
+2025-09-28 15:47:57,189 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\f99687d92ea9.jpg
+2025-09-28 15:48:02,230 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:48:03,849 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\d9e8387087c1.jpg
+2025-09-28 15:48:11,958 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:48:13,578 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\3fddde8a9019.jpg
+2025-09-28 15:48:15,307 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\0fa33378eddf.jpg
+2025-09-28 15:48:24,286 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\fd5f20239c07.jpg
+2025-09-28 15:48:29,195 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\c4067e25fb77.jpg
+2025-09-28 15:48:39,323 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\687cea3b67c3.jpg
+2025-09-28 15:48:50,233 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:48:50,538 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\cb5e6c7e5dce.jpg
+2025-09-28 15:48:59,711 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\965b1b904c54.jpg
+2025-09-28 15:49:01,082 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\e3613ab766c7.jpg
+2025-09-28 15:49:08,398 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:49:09,472 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:49:10,771 - PinterestKolamScraper - WARNING - Image below minimum resolution: (540, 419)
+2025-09-28 15:49:12,395 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\95043d90f96a.jpg
+2025-09-28 15:49:28,522 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\8769e0ca7466.jpg
+2025-09-28 15:49:39,736 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\1ced6f7eaaf2.jpg
+2025-09-28 15:49:44,372 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\c8cd4bd70777.jpg
+2025-09-28 15:49:54,525 - PinterestKolamScraper - WARNING - Image below minimum resolution: (300, 300)
+2025-09-28 15:49:56,820 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\1bc68986ba69.jpg
+2025-09-28 15:50:04,046 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\ce7b0ee2fcb7.jpg
+2025-09-28 15:50:32,920 - PinterestKolamScraper - WARNING - Image below minimum resolution: (360, 360)
+2025-09-28 15:50:34,131 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\af034913beaf.jpg
+2025-09-28 15:50:34,857 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\76fd0089e61f.jpg
+2025-09-28 15:50:36,696 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:50:38,670 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\b84d9cfd048b.jpg
+2025-09-28 15:50:47,478 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:50:48,029 - PinterestKolamScraper - WARNING - Image below minimum resolution: (335, 365)
+2025-09-28 15:50:48,140 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\871df587b992.jpg
+2025-09-28 15:50:48,302 - PinterestKolamScraper - WARNING - Image below minimum resolution: (474, 474)
+2025-09-28 15:50:49,005 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\8deef91dcd67.jpg
+2025-09-28 15:50:49,036 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:50:49,882 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\6c9b2b119144.jpg
+2025-09-28 15:50:49,985 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:50:52,735 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\3001af839e8f.jpg
+2025-09-28 15:50:56,239 - PinterestKolamScraper - WARNING - Image below minimum resolution: (451, 677)
+2025-09-28 15:50:56,303 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\73a492aacb2f.jpg
+2025-09-28 15:50:57,071 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:50:57,458 - root - ERROR - Error extracting color palette: Python int too large to convert to C long
+2025-09-28 15:50:58,963 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\ba6698bc388e.jpg
+2025-09-28 15:51:03,213 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\5bcfb8c1769d.jpg
+2025-09-28 15:51:05,540 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:51:06,739 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:51:07,920 - PinterestKolamScraper - WARNING - Image below minimum resolution: (440, 464)
+2025-09-28 15:51:09,838 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\ef2b2f1c2ca9.jpg
+2025-09-28 15:51:11,049 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\3ec55ebbf739.jpg
+2025-09-28 15:51:11,688 - PinterestKolamScraper - WARNING - Image below minimum resolution: (442, 440)
+2025-09-28 15:51:12,502 - PinterestKolamScraper - WARNING - Image below minimum resolution: (269, 280)
+2025-09-28 15:51:13,457 - PinterestKolamScraper - WARNING - Image below minimum resolution: (473, 488)
+2025-09-28 15:51:13,826 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\8ed9fe2f76a2.jpg
+2025-09-28 15:51:14,325 - PinterestKolamScraper - WARNING - Image below minimum resolution: (267, 260)
+2025-09-28 15:51:15,105 - PinterestKolamScraper - WARNING - Image below minimum resolution: (451, 800)
+2025-09-28 15:51:16,669 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:51:16,985 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\4221d4a67965.jpg
+2025-09-28 15:51:18,430 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\0d10af053697.jpg
+2025-09-28 15:51:18,800 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:51:22,536 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\49c1f78f6662.jpg
+2025-09-28 15:51:27,521 - PinterestKolamScraper - WARNING - Image below minimum resolution: (473, 355)
+2025-09-28 15:51:28,417 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:51:31,632 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\172b007291bf.jpg
+2025-09-28 15:51:33,503 - PinterestKolamScraper - WARNING - Image below minimum resolution: (474, 465)
+2025-09-28 15:51:35,576 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:51:35,592 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\32fb3e0a478d.jpg
+2025-09-28 15:51:38,458 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\dae01ceb5bba.jpg
+2025-09-28 15:51:47,212 - PinterestKolamScraper - WARNING - Image below minimum resolution: (270, 280)
+2025-09-28 15:51:48,436 - PinterestKolamScraper - WARNING - Image below minimum resolution: (400, 400)
+2025-09-28 15:51:49,640 - PinterestKolamScraper - WARNING - Image below minimum resolution: (360, 720)
+2025-09-28 15:51:51,665 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\e7c709118a40.jpg
+2025-09-28 15:51:52,584 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:51:54,429 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\85207db1cdef.jpg
+2025-09-28 15:51:55,508 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:51:57,196 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\fbf444927bde.jpg
+2025-09-28 15:51:57,212 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\9ca80b531b94.jpg
+2025-09-28 15:52:04,662 - PinterestKolamScraper - WARNING - Image below minimum resolution: (277, 280)
+2025-09-28 15:52:07,670 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\b9ea3af4069f.jpg
+2025-09-28 15:52:17,332 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\20d08f4cfcd5.jpg
+2025-09-28 15:52:19,077 - PinterestKolamScraper - WARNING - Image below minimum resolution: (395, 431)
+2025-09-28 15:52:20,424 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\d46bc93116ce.jpg
+2025-09-28 15:52:31,700 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\0ff56a8cd370.jpg
+2025-09-28 15:52:34,489 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\a344dcfb4159.jpg
+2025-09-28 15:52:39,098 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\df235d3dcce0.jpg
+2025-09-28 15:52:39,119 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\32ee90c276a1.jpg
+2025-09-28 15:52:52,747 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\61fd6d36035b.jpg
+2025-09-28 15:52:53,275 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\7a8cf548407b.jpg
+2025-09-28 15:52:53,703 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:52:54,714 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:52:54,825 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\5ce1cbfbc14b.jpg
+2025-09-28 15:53:08,218 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\e5715c809126.jpg
+2025-09-28 15:53:20,076 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\f5122bcb69ee.jpg
+2025-09-28 15:53:21,257 - PinterestKolamScraper - WARNING - Image below minimum resolution: (264, 280)
+2025-09-28 15:53:22,553 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:53:22,777 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\6323fe7bcdc0.jpg
+2025-09-28 15:53:23,229 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\bf3f0f925303.jpg
+2025-09-28 15:53:35,025 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\fcdf07609214.jpg
+2025-09-28 15:53:39,907 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\4756dc5e778c.jpg
+2025-09-28 15:53:49,423 - PinterestKolamScraper - WARNING - Image below minimum resolution: (223, 226)
+2025-09-28 15:53:50,950 - PinterestKolamScraper - WARNING - Image below minimum resolution: (360, 640)
+2025-09-28 15:53:53,139 - PinterestKolamScraper - WARNING - Image below minimum resolution: (378, 494)
+2025-09-28 15:53:53,164 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\c1f1539e51cd.jpg
+2025-09-28 15:53:58,122 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\76a8771b30c0.jpg
+2025-09-28 15:54:12,030 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\40cfc0c62635.jpg
+2025-09-28 15:54:13,706 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\76a74da97771.jpg
+2025-09-28 15:54:20,071 - PinterestKolamScraper - WARNING - Image below minimum resolution: (360, 640)
+2025-09-28 15:54:20,960 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:54:21,988 - PinterestKolamScraper - WARNING - Image below minimum resolution: (447, 793)
+2025-09-28 15:54:24,366 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:54:24,415 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\31a4c1a6a29f.jpg
+2025-09-28 15:54:28,757 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\244cf9051693.jpg
+2025-09-28 15:54:29,412 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\b1a6ac565dc5.jpg
+2025-09-28 15:54:45,943 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:54:46,972 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:54:51,453 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\0934c180909b.jpg
+2025-09-28 15:54:53,010 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:54:54,053 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:54:58,626 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\c33c5000a2b3.jpg
+2025-09-28 15:54:59,678 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\8e754fe22a03.jpg
+2025-09-28 15:55:22,130 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\b1b1e6c57b2d.jpg
+2025-09-28 15:55:24,177 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\ae7b9b6ad9b8.jpg
+2025-09-28 15:55:41,038 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:55:42,106 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:55:42,880 - PinterestKolamScraper - WARNING - Image below minimum resolution: (735, 490)
+2025-09-28 15:55:43,271 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:55:44,365 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\35ddcd861fff.jpg
+2025-09-28 15:55:46,933 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\a87ccfb268da.jpg
+2025-09-28 15:55:54,182 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\f0509caf2ed6.jpg
+2025-09-28 15:55:58,989 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\979909435203.jpg
+2025-09-28 15:56:00,450 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\610100cf2767.jpg
+2025-09-28 15:56:10,535 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\8ca3fa88ec40.jpg
+2025-09-28 15:56:11,763 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\c7a6903299f9.jpg
+2025-09-28 15:56:15,469 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:56:16,987 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:56:20,373 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\2a77af37c460.jpg
+2025-09-28 15:56:43,823 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\6e4bb2398815.jpg
+2025-09-28 15:56:51,945 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\e06292759d4d.jpg
+2025-09-28 15:56:54,362 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\c3d05c2b8305.jpg
+2025-09-28 15:56:58,156 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\ee7b8bb80bba.jpg
+2025-09-28 15:57:07,291 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 15:57:08,122 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:57:08,701 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\bd2c421927d0.jpg
+2025-09-28 15:57:09,105 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\eedbc841b2be.jpg
+2025-09-28 15:57:13,006 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\97022b61e7cc.jpg
+2025-09-28 15:57:24,800 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\unclassified\4b6d82ca232b.jpg
+2025-09-28 15:57:39,262 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\1363b30a4fab.jpg
+2025-09-28 15:57:42,656 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\d4f652dae027.jpg
+2025-09-28 15:57:58,207 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\andhra_telangana\99fad2bc88cb.jpg
+2025-09-28 15:57:59,899 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\7875f82632ac.jpg
+2025-09-28 15:58:04,013 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\7387c0e8eb99.jpg
+2025-09-28 15:58:12,525 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:58:14,632 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\bbd7380a67c2.jpg
+2025-09-28 15:58:15,207 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\41d58a6d9871.jpg
+2025-09-28 15:58:28,221 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\0a739df01b26.jpg
+2025-09-28 15:58:28,479 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\68f3d36d2413.jpg
+2025-09-28 15:58:30,085 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:58:34,403 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\63374719f35a.jpg
+2025-09-28 15:58:40,987 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:58:43,021 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\a6dba91ad752.jpg
+2025-09-28 15:58:44,570 - PinterestKolamScraper - WARNING - Image below minimum resolution: (360, 640)
+2025-09-28 15:58:48,074 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\e642ba9376fe.jpg
+2025-09-28 15:58:55,489 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:58:57,425 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\f2924fecee1d.jpg
+2025-09-28 15:58:59,037 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\fddfe3c83f35.jpg
+2025-09-28 15:59:06,451 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\50269171d375.jpg
+2025-09-28 15:59:11,957 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\581668cf34b1.jpg
+2025-09-28 15:59:15,917 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\ac201e5472cb.jpg
+2025-09-28 15:59:24,989 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\1930b73418d5.jpg
+2025-09-28 15:59:30,787 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\5dc1913ab579.jpg
+2025-09-28 15:59:36,003 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\a4440a2318e3.jpg
+2025-09-28 15:59:48,002 - PinterestKolamScraper - WARNING - Image below minimum resolution: (360, 720)
+2025-09-28 15:59:50,301 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\c671b8d1e126.jpg
+2025-09-28 15:59:54,350 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 15:59:55,813 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\e2055daa5ad0.jpg
+2025-09-28 15:59:59,917 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\970cd46149f2.jpg
+2025-09-28 16:00:09,545 - PinterestKolamScraper - WARNING - Image below minimum resolution: (432, 768)
+2025-09-28 16:00:09,923 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 16:00:09,951 - PinterestKolamScraper - WARNING - Image below minimum resolution: (345, 613)
+2025-09-28 16:00:10,584 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\6d1a74b9b8fb.jpg
+2025-09-28 16:00:11,880 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\f670bf784cf5.jpg
+2025-09-28 16:00:12,111 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\1d69ab5beaa6.jpg
+2025-09-28 16:00:18,934 - PinterestKolamScraper - WARNING - Image below minimum resolution: (480, 360)
+2025-09-28 16:00:20,430 - PinterestKolamScraper - WARNING - Image below minimum resolution: (405, 720)
+2025-09-28 16:00:26,417 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\karnataka\92b65e3884de.jpg
+2025-09-28 16:00:28,834 - PinterestKolamScraper - WARNING - Image below minimum resolution: (564, 317)
+2025-09-28 16:00:31,140 - PinterestKolamScraper - INFO - Downloaded: ./kolam_dataset\images\tamil_nadu\ed7e6fc106b7.jpg
+2025-09-28 16:01:28,326 - PinterestKolamScraper - INFO - Downloads completed - Success: 198, Failed: 180
+2025-09-28 16:01:28,394 - PinterestKolamScraper - ERROR - Fatal error in main execution: 'charmap' codec can't decode byte 0x8d in position 952: character maps to <undefined>
+2025-09-28 16:01:28,396 - ErrorLogger - ERROR - Fatal error in main execution: 'charmap' codec can't decode byte 0x8d in position 952: character maps to <undefined>
+2025-09-28 16:01:33,857 - PinterestKolamScraper - INFO - WebDriver closed

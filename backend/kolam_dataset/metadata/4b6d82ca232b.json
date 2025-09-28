@@ -1,0 +1,54 @@
+{
+  "file_info": {
+    "filename": "4b6d82ca232b.jpg",
+    "source_url": "https://i.pinimg.com/videos/thumbnails/originals/e3/e5/53/e3e5534c38086c633e023459a081b3c6.0000000.jpg",
+    "pinterest_id": "6896205673245546",
+    "file_size": 564663,
+    "resolution": "1080x1920",
+    "download_timestamp": "2025-09-28T15:57:24.995368"
+  },
+  "kolam_properties": {
+    "region": "unclassified",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [],
+    "confidence_score": 0.0,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#74654b",
+      "#a59379",
+      "#948263",
+      "#e1dcd3",
+      "#342e19"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/6896205673245546/",
+    "description": "This may contain: the cover art for thursday morning, written in white chalk on a sidewalk",
+    "alt_text": "This may contain: the cover art for thursday morning, written in white chalk on a sidewalk",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [],
+    "suggested_tags": []
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

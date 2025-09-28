@@ -1,0 +1,66 @@
+{
+  "file_info": {
+    "filename": "e3613ab766c7.jpg",
+    "source_url": "https://i.pinimg.com/236x/39/67/3d/39673dfff4adf41dbf4a38afaf65ff10.jpg",
+    "pinterest_id": "703756185046487",
+    "file_size": 88274,
+    "resolution": "584x525",
+    "download_timestamp": "2025-09-28T15:49:01.326263"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#2f211b",
+      "#e5e0dc",
+      "#605550",
+      "#a59e9a",
+      "#4c3b36"
+    ],
+    "visual_complexity": 0.94,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/703756185046487/",
+    "description": "Pin by Arunachalam on Rangoli designs | Rangoli designs with dots, Small rangoli design, Rangoli designs",
+    "alt_text": "Pin by Arunachalam on Rangoli designs | Rangoli designs with dots, Small rangoli design, Rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "dots",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "23a8a0adba90.jpg",
+    "source_url": "https://i.pinimg.com/236x/08/7a/c1/087ac138abf2ba125514a98804b9386e.jpg",
+    "pinterest_id": "218495019416726375",
+    "file_size": 133737,
+    "resolution": "700x700",
+    "download_timestamp": "2025-09-28T15:42:05.600163"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#866a4b",
+      "#f6efde",
+      "#ab9e8a",
+      "#918068",
+      "#ccc1ad"
+    ],
+    "visual_complexity": 0.65,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/218495019416726375/",
+    "description": "Onam Pookalam Designs | Onam Flowers Rangoli Designs | Pookalam Designs - Onam Pookalam Rangoli 15 | Pookalam design, Diy drawing books, Geometric design art",
+    "alt_text": "Onam Pookalam Designs | Onam Flowers Rangoli Designs | Pookalam Designs - Onam Pookalam Rangoli 15 | Pookalam design, Diy drawing books, Geometric design art",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

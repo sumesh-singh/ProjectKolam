@@ -1,0 +1,71 @@
+{
+  "file_info": {
+    "filename": "31a4c1a6a29f.jpg",
+    "source_url": "https://i.pinimg.com/236x/cd/c3/8b/cdc38b4ef7e57a7318b9a9dac5bb8bf2.jpg",
+    "pinterest_id": "10344274146967680",
+    "file_size": 394003,
+    "resolution": "1452x1428",
+    "download_timestamp": "2025-09-28T15:54:24.743286"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#14273e",
+      "#93a0ac",
+      "#516170",
+      "#c3ccd3",
+      "#2f4053"
+    ],
+    "visual_complexity": 0.59,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/10344274146967680/",
+    "description": "Padi kolam (PK 4) | Simple rangoli border designs, Simple art designs, Rangoli designs with dots",
+    "alt_text": "Padi kolam (PK 4) | Simple rangoli border designs, Simple art designs, Rangoli designs with dots",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "padi",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

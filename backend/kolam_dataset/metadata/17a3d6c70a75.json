@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "17a3d6c70a75.jpg",
+    "source_url": "https://i.pinimg.com/236x/67/3e/4e/673e4e40b282ef1612863447c8d3e8b7.jpg",
+    "pinterest_id": "2040762327892598",
+    "file_size": 238641,
+    "resolution": "720x980",
+    "download_timestamp": "2025-09-28T15:42:43.866743"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#dedee3",
+      "#e7e2e7",
+      "#e7e6e5",
+      "#e5e8e7",
+      "#222020"
+    ],
+    "visual_complexity": 0.75,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/2040762327892598/",
+    "description": "rangoli designs",
+    "alt_text": "rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

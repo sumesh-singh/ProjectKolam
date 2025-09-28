@@ -1,0 +1,66 @@
+{
+  "file_info": {
+    "filename": "5f1757b50813.jpg",
+    "source_url": "https://i.pinimg.com/236x/f7/b6/e0/f7b6e0743abba7a8711b09faffc72812.jpg",
+    "pinterest_id": "34128909672619834",
+    "file_size": 5430541,
+    "resolution": "3468x4624",
+    "download_timestamp": "2025-09-28T15:45:39.713259"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#22211e",
+      "#5b5853",
+      "#177398",
+      "#a13660",
+      "#e5e2dc"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/34128909672619834/",
+    "description": "simple muggu in 2025 | Rangoli designs with dots, Easy rangoli designs videos, Simple rangoli border designs",
+    "alt_text": "simple muggu in 2025 | Rangoli designs with dots, Easy rangoli designs videos, Simple rangoli border designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "dots",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

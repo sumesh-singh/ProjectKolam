@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "6310e47fd786.jpg",
+    "source_url": "https://i.pinimg.com/236x/08/15/34/08153404cb79053a5226ba51d1918ad5.jpg",
+    "pinterest_id": "10836855346882928",
+    "file_size": 162721,
+    "resolution": "736x1308",
+    "download_timestamp": "2025-09-28T15:45:43.068598"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#7a5c3c",
+      "#c6956b",
+      "#412c16",
+      "#e6d1a7",
+      "#534225"
+    ],
+    "visual_complexity": 0.21,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/10836855346882928/",
+    "description": "Pin by Khady on TEXTILES BUSINESS in 2025 | Simple rangoli designs images, Simple rangoli border designs, Easy rangoli designs videos",
+    "alt_text": "Pin by Khady on TEXTILES BUSINESS in 2025 | Simple rangoli designs images, Simple rangoli border designs, Easy rangoli designs videos",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

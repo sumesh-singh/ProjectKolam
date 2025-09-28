@@ -1,0 +1,63 @@
+{
+  "file_info": {
+    "filename": "f17da5c5505e.jpg",
+    "source_url": "https://i.pinimg.com/236x/90/23/2c/90232c8bc9f8539d35438e29178bc9a7.jpg",
+    "pinterest_id": "141230138309171654",
+    "file_size": 259805,
+    "resolution": "1414x2000",
+    "download_timestamp": "2025-09-28T15:44:00.948027"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "color"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#fefefe",
+      "#030303",
+      "#5e5e5e",
+      "#9f9f9f"
+    ],
+    "visual_complexity": 0.14,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/141230138309171654/",
+    "description": "Diwali Rangoli Pattern Coloring Pages | Rangoli patterns, Pattern coloring pages, Coloring pages",
+    "alt_text": "Diwali Rangoli Pattern Coloring Pages | Rangoli patterns, Pattern coloring pages, Coloring pages",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "color",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

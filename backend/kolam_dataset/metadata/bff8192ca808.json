@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "bff8192ca808.jpg",
+    "source_url": "https://i.pinimg.com/236x/9c/48/b9/9c48b9bb562a5e6fb4126795650e998d.jpg",
+    "pinterest_id": "12666442696526286",
+    "file_size": 103601,
+    "resolution": "700x700",
+    "download_timestamp": "2025-09-28T15:42:30.465221"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#795389",
+      "#f6ebf8",
+      "#a692ad",
+      "#efecf5",
+      "#8b7195"
+    ],
+    "visual_complexity": 0.43,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/12666442696526286/",
+    "description": "Peacock Rangoli Design 4 | Stunning Rangoli Designs",
+    "alt_text": "Peacock Rangoli Design 4 | Stunning Rangoli Designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

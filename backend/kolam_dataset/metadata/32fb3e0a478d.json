@@ -1,0 +1,70 @@
+{
+  "file_info": {
+    "filename": "32fb3e0a478d.jpg",
+    "source_url": "https://i.pinimg.com/236x/10/b0/d8/10b0d8f8c9ecbadd9298eb5eacce2eaa.jpg",
+    "pinterest_id": "4433299629071082",
+    "file_size": 470300,
+    "resolution": "1066x1066",
+    "download_timestamp": "2025-09-28T15:51:36.029138"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "kambi_sikku",
+      "pulli",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "sikku",
+      "dot kolam",
+      "kolam",
+      "rangoli"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#4a4a4a",
+      "#3b3b3b",
+      "#f6f6f6",
+      "#a0a0a0"
+    ],
+    "visual_complexity": 0.26,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/4433299629071082/",
+    "description": "Aaradhya Suresh on Instagram: \"9 dot Kolam Kolam / muggulu / sikkukolam Easy and simple kolam ❤️Like, Share, Comment and Save  Follow @kolam_by_aaradhya for mor… | Easy rangoli designs videos, Simple rangoli border designs, Simple rangoli designs images",
+    "alt_text": "Aaradhya Suresh on Instagram: \"9 dot Kolam Kolam / muggulu / sikkukolam Easy and simple kolam ❤️Like, Share, Comment and Save  Follow @kolam_by_aaradhya for mor… | Easy rangoli designs videos, Simple rangoli border designs, Simple rangoli designs images",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "sikku",
+      "dot kolam",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "kambi-sikku",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

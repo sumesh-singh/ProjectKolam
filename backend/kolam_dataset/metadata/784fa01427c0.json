@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "784fa01427c0.jpg",
+    "source_url": "https://i.pinimg.com/236x/1d/6c/e9/1d6ce94d488c30eb8345801a6011131b.jpg",
+    "pinterest_id": "563018697063821",
+    "file_size": 209796,
+    "resolution": "680x960",
+    "download_timestamp": "2025-09-28T15:46:41.543985"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#dbdbe0",
+      "#e3dee1",
+      "#e3e1e0",
+      "#181615",
+      "#141418"
+    ],
+    "visual_complexity": 0.98,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/563018697063821/",
+    "description": "Easy Rangoli Designs: The Arts of Nia",
+    "alt_text": "Easy Rangoli Designs: The Arts of Nia",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

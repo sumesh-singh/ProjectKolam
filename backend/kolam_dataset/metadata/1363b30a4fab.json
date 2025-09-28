@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "1363b30a4fab.jpg",
+    "source_url": "https://i.pinimg.com/236x/6f/d5/3d/6fd53d091b0583fb24bd76d9aa59bbd8.jpg",
+    "pinterest_id": "125678645846894050",
+    "file_size": 1144042,
+    "resolution": "3024x4032",
+    "download_timestamp": "2025-09-28T15:57:39.723147"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#aa5d36",
+      "#ce8458",
+      "#bd7047",
+      "#54240e",
+      "#e2dcd2"
+    ],
+    "visual_complexity": 0.05,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/125678645846894050/",
+    "description": "Purnima kolam in 2025 | Rangoli designs with dots, Rangoli designs flower, Traditional artwork",
+    "alt_text": "Purnima kolam in 2025 | Rangoli designs with dots, Rangoli designs flower, Traditional artwork",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "file_info": {
+    "filename": "ee7b8bb80bba.jpg",
+    "source_url": "https://i.pinimg.com/236x/fd/7f/ec/fd7fec27cf703acd0f3900fbb85dbdf4.jpg",
+    "pinterest_id": "618470961361953556",
+    "file_size": 59709,
+    "resolution": "576x720",
+    "download_timestamp": "2025-09-28T15:56:58.356599"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#070604",
+      "#605845",
+      "#e2ddd1",
+      "#a9a191",
+      "#464430"
+    ],
+    "visual_complexity": 0.33,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/618470961361953556/",
+    "description": "Easy padikolam designs| Simplemugguludesigns| easy rangoli designs| Beginners kolam| m… | Rangoli designs with dots, Rangoli side designs, Beautiful rangoli designs",
+    "alt_text": "Easy padikolam designs| Simplemugguludesigns| easy rangoli designs| Beginners kolam| m… | Rangoli designs with dots, Rangoli side designs, Beautiful rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "padi",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

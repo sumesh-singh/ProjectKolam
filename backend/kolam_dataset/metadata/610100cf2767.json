@@ -1,0 +1,50 @@
+{
+  "file_info": {
+    "filename": "610100cf2767.jpg",
+    "source_url": "https://i.pinimg.com/videos/thumbnails/originals/c9/62/f1/c962f1c249ad068c3a4a13fffe7cfae6.0000000.jpg",
+    "pinterest_id": "2885187252682148",
+    "file_size": 8727,
+    "resolution": "720x720",
+    "download_timestamp": "2025-09-28T15:56:00.789382"
+  },
+  "kolam_properties": {
+    "region": "unclassified",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "complex",
+    "detected_keywords": [],
+    "confidence_score": 0.0,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#101010"
+    ],
+    "visual_complexity": 0.0,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/2885187252682148/",
+    "description": "This may contain: a black and white design with an intricate pattern in the middle, on a black background",
+    "alt_text": "This may contain: a black and white design with an intricate pattern in the middle, on a black background",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [],
+    "suggested_tags": []
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

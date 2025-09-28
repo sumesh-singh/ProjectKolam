@@ -1,0 +1,60 @@
+{
+  "file_info": {
+    "filename": "50269171d375.jpg",
+    "source_url": "https://i.pinimg.com/236x/64/51/80/6451802f1f8e7f3166d6a82bc906d79d.jpg",
+    "pinterest_id": "432345632994816450",
+    "file_size": 486807,
+    "resolution": "1079x928",
+    "download_timestamp": "2025-09-28T15:59:06.744373"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "kolam"
+    ],
+    "confidence_score": 0.2,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#230f0b",
+      "#a0aaae",
+      "#9aa4a1",
+      "#625b54",
+      "#c3ced4"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/432345632994816450/",
+    "description": "Pin by Manisha Chaudhari on kolam | Simple art designs, Kolam designs, Hand designs",
+    "alt_text": "Pin by Manisha Chaudhari on kolam | Simple art designs, Kolam designs, Hand designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam"
+    ],
+    "suggested_tags": [
+      "tamil-nadu"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

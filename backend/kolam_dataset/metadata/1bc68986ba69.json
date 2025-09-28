@@ -1,0 +1,71 @@
+{
+  "file_info": {
+    "filename": "1bc68986ba69.jpg",
+    "source_url": "https://i.pinimg.com/236x/11/2d/75/112d751d1820afd46954797c211cfaf3.jpg",
+    "pinterest_id": "52495151900904789",
+    "file_size": 137784,
+    "resolution": "640x640",
+    "download_timestamp": "2025-09-28T15:49:57.057857"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "kambi_sikku",
+      "pulli",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "sikku",
+      "dots",
+      "kolam",
+      "rangoli"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#030303",
+      "#f4f4f3",
+      "#06060b",
+      "#a4a39c",
+      "#695d53"
+    ],
+    "visual_complexity": 0.72,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/52495151900904789/",
+    "description": "Sikku Kolam 21 Dots - Traditional Diwali Rangoli Design",
+    "alt_text": "Sikku Kolam 21 Dots - Traditional Diwali Rangoli Design",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "sikku",
+      "dots",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "kambi-sikku",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "file_info": {
+    "filename": "e06292759d4d.jpg",
+    "source_url": "https://i.pinimg.com/236x/21/4c/de/214cdef8b003ce5801645473013121a2.jpg",
+    "pinterest_id": "153474299798269488",
+    "file_size": 4851621,
+    "resolution": "4096x3906",
+    "download_timestamp": "2025-09-28T15:56:52.188401"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "freehand",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "free hand",
+      "dots",
+      "kolam",
+      "rangoli"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#231913",
+      "#d6e3ef",
+      "#96a2b5",
+      "#575c6c",
+      "#261e22"
+    ],
+    "visual_complexity": 0.63,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/153474299798269488/",
+    "description": "Swastik kolam in 2025 | Free hand rangoli design, Rangoli designs with dots, New rangoli designs",
+    "alt_text": "Swastik kolam in 2025 | Free hand rangoli design, Rangoli designs with dots, New rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

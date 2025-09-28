@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "8ca3fa88ec40.jpg",
+    "source_url": "https://i.pinimg.com/236x/8b/86/9d/8b869da47387cc5085791b156ba5557e.jpg",
+    "pinterest_id": "26458716561329206",
+    "file_size": 705166,
+    "resolution": "1276x1440",
+    "download_timestamp": "2025-09-28T15:56:10.972180"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "complex",
+    "detected_keywords": [
+      "rangoli",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#4c241d",
+      "#694a45",
+      "#d9d1cf",
+      "#5d322b",
+      "#ac9f9c"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/26458716561329206/",
+    "description": "Intricately Designed Padi Kolam for Rangoli Border",
+    "alt_text": "Intricately Designed Padi Kolam for Rangoli Border",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "padi",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

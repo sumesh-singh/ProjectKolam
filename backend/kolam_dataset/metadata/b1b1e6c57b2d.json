@@ -1,0 +1,73 @@
+{
+  "file_info": {
+    "filename": "b1b1e6c57b2d.jpg",
+    "source_url": "https://i.pinimg.com/236x/6b/1c/d0/6b1cd0ea95c78530fb48b7c942490b37.jpg",
+    "pinterest_id": "67554063157372313",
+    "file_size": 581965,
+    "resolution": "1280x720",
+    "download_timestamp": "2025-09-28T15:55:22.562130"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "kolam",
+      "rangoli",
+      "dots",
+      "padi",
+      "free hand"
+    ],
+    "confidence_score": 1.0,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#372613",
+      "#68543d",
+      "#504128",
+      "#e7f6f5",
+      "#dbedf2"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/67554063157372313/",
+    "description": "Kirushna jayanti simple padi kolam|5*3 aavani madham kolam|gokulastami kolam| Beautifu… in 2025 | Free hand rangoli design, Rangoli designs with dots, Rangoli kolam designs",
+    "alt_text": "Kirushna jayanti simple padi kolam|5*3 aavani madham kolam|gokulastami kolam| Beautifu… in 2025 | Free hand rangoli design, Rangoli designs with dots, Rangoli kolam designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "padi",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

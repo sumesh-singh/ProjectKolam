@@ -1,0 +1,66 @@
+{
+  "file_info": {
+    "filename": "6ce6e89be1f5.jpg",
+    "source_url": "https://i.pinimg.com/236x/3f/8e/ab/3f8eabe1581f0ed79c5922661fa9483b.jpg",
+    "pinterest_id": "258886678575938620",
+    "file_size": 383812,
+    "resolution": "1280x720",
+    "download_timestamp": "2025-09-28T15:44:00.478776"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "free hand"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#a24b28",
+      "#062509",
+      "#0a0a44",
+      "#cb946f",
+      "#c61107"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/258886678575938620/",
+    "description": "Diwali rangoli | Lakshmi Pujan rangoli | Dhanteres rangoli| diwali padwa rangoli| bigges… | Free hand rangoli design, Very easy rangoli designs, Big rangoli designs",
+    "alt_text": "Diwali rangoli | Lakshmi Pujan rangoli | Dhanteres rangoli| diwali padwa rangoli| bigges… | Free hand rangoli design, Very easy rangoli designs, Big rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

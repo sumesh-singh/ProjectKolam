@@ -1,0 +1,60 @@
+{
+  "file_info": {
+    "filename": "0b228aefc85e.jpg",
+    "source_url": "https://i.pinimg.com/236x/3b/0c/be/3b0cbe18d452945de1db575985a50d25.jpg",
+    "pinterest_id": "78179743526892206",
+    "file_size": 291096,
+    "resolution": "745x745",
+    "download_timestamp": "2025-09-28T15:42:14.359721"
+  },
+  "kolam_properties": {
+    "region": "kerala",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "onam"
+    ],
+    "confidence_score": 0.2,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#b4ad9b",
+      "#67040b",
+      "#d8d4c0",
+      "#85111c",
+      "#836b29"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/78179743526892206/",
+    "description": "Onam Pookalam Designs - Simple and Elegant",
+    "alt_text": "Onam Pookalam Designs - Simple and Elegant",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "onam"
+    ],
+    "suggested_tags": [
+      "kerala"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

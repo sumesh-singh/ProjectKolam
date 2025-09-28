@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "95951df27a08.jpg",
+    "source_url": "https://i.pinimg.com/236x/ed/14/8c/ed148c465e249c0ebcdc2fbacee2ff69.jpg",
+    "pinterest_id": "231653974578908274",
+    "file_size": 287272,
+    "resolution": "1280x720",
+    "download_timestamp": "2025-09-28T15:47:42.527823"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#1f1a10",
+      "#131c24",
+      "#0e150f",
+      "#91a7bd",
+      "#72593b"
+    ],
+    "visual_complexity": 0.83,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/231653974578908274/",
+    "description": "#Margazhi special rangoli/#Pongal/#Sankranti/#Thaipoosam/#Friday rangol… in 2025 | Simple rangoli border designs, Easy rangoli designs videos, Simple rangoli designs images",
+    "alt_text": "#Margazhi special rangoli/#Pongal/#Sankranti/#Thaipoosam/#Friday rangol… in 2025 | Simple rangoli border designs, Easy rangoli designs videos, Simple rangoli designs images",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "d6ce8c5f6119.jpg",
+    "source_url": "https://i.pinimg.com/236x/51/71/09/517109c8d7e82cfc4fbb4f90e2988e15.jpg",
+    "pinterest_id": "44543483812565691",
+    "file_size": 3748147,
+    "resolution": "2976x3968",
+    "download_timestamp": "2025-09-28T15:39:04.337265"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#745d42",
+      "#2b2419",
+      "#b39b78",
+      "#9ca19c",
+      "#c89719"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/44543483812565691/",
+    "description": "pookkalam in 2025 | Flower pattern drawing, Easy rangoli designs videos, Big rangoli designs",
+    "alt_text": "pookkalam in 2025 | Flower pattern drawing, Easy rangoli designs videos, Big rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "bbd7380a67c2.jpg",
+    "source_url": "https://i.pinimg.com/236x/ed/a4/b0/eda4b05d31e2a765f09eda898e7ef57b.jpg",
+    "pinterest_id": "351912464936213",
+    "file_size": 202713,
+    "resolution": "893x960",
+    "download_timestamp": "2025-09-28T15:58:15.128545"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#1c1519",
+      "#1a1818",
+      "#ede2eb",
+      "#aa9ea7",
+      "#655a63"
+    ],
+    "visual_complexity": 0.54,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/351912464936213/",
+    "description": "Simple Rangoli Border Designs",
+    "alt_text": "Simple Rangoli Border Designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "file_info": {
+    "filename": "581668cf34b1.jpg",
+    "source_url": "https://i.pinimg.com/236x/53/77/19/5377196b20280ce1dc492e6e53d15d83.jpg",
+    "pinterest_id": "198932508534647517",
+    "file_size": 265307,
+    "resolution": "1280x720",
+    "download_timestamp": "2025-09-28T15:59:12.172892"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#5f5d4c",
+      "#2e2b1b",
+      "#e0dfd8",
+      "#a59d8f",
+      "#444434"
+    ],
+    "visual_complexity": 0.73,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/198932508534647517/",
+    "description": "Easy 3*3 padikolam designs| Simple muggulu designs| easy rangoli designs| Beginners ko… in 2025 | Easy rangoli designs, Beautiful rangoli designs, Rangoli designs with dots",
+    "alt_text": "Easy 3*3 padikolam designs| Simple muggulu designs| easy rangoli designs| Beginners ko… in 2025 | Easy rangoli designs, Beautiful rangoli designs, Rangoli designs with dots",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "padi",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

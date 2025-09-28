@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "a6dba91ad752.jpg",
+    "source_url": "https://i.pinimg.com/236x/fa/e0/bd/fae0bdcb89d7c44960c7626de9c61de5.jpg",
+    "pinterest_id": "239816748903854807",
+    "file_size": 312039,
+    "resolution": "824x910",
+    "download_timestamp": "2025-09-28T15:58:43.204347"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#030202",
+      "#f5f4f4",
+      "#880d10",
+      "#a39e9b",
+      "#645e5b"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/239816748903854807/",
+    "description": "Pin by Meenakshi Parameswaran on Parvarshi rangolis in 2025 | Padi kolam, Ganesh rangoli, Rangoli designs",
+    "alt_text": "Pin by Meenakshi Parameswaran on Parvarshi rangolis in 2025 | Padi kolam, Ganesh rangoli, Rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "padi",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

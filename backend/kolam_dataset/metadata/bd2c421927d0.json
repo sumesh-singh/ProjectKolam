@@ -1,0 +1,73 @@
+{
+  "file_info": {
+    "filename": "bd2c421927d0.jpg",
+    "source_url": "https://i.pinimg.com/236x/a9/4c/9e/a94c9e457891280dee6061cd2b8fc4e2.jpg",
+    "pinterest_id": "259871840993596454",
+    "file_size": 319488,
+    "resolution": "1280x720",
+    "download_timestamp": "2025-09-28T15:57:08.870162"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "kolam",
+      "rangoli",
+      "dots",
+      "padi",
+      "free hand"
+    ],
+    "confidence_score": 1.0,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#3b1006",
+      "#f2ecd3",
+      "#7b523c",
+      "#290001",
+      "#b1a089"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/259871840993596454/",
+    "description": "Easy 3*3 big padikolam designs| Simple muggulu designs| easy rangoli designs| Begin… in 2025 | Very easy rangoli designs, Free hand rangoli design, Simple rangoli with dots",
+    "alt_text": "Easy 3*3 big padikolam designs| Simple muggulu designs| easy rangoli designs| Begin… in 2025 | Very easy rangoli designs, Free hand rangoli design, Simple rangoli with dots",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "padi",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

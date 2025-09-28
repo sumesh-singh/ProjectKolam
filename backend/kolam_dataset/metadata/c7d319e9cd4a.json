@@ -1,0 +1,54 @@
+{
+  "file_info": {
+    "filename": "c7d319e9cd4a.jpg",
+    "source_url": "https://i.pinimg.com/videos/thumbnails/originals/66/53/a0/6653a08f851ed47fe29125cd51163d5e.0000000.jpg",
+    "pinterest_id": "351912465794536",
+    "file_size": 165227,
+    "resolution": "720x1280",
+    "download_timestamp": "2025-09-28T15:43:26.722378"
+  },
+  "kolam_properties": {
+    "region": "unclassified",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [],
+    "confidence_score": 0.0,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#7c6449",
+      "#aa0517",
+      "#a20f09",
+      "#a38d6e",
+      "#49140a"
+    ],
+    "visual_complexity": 0.31,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/351912465794536/",
+    "description": "This may contain: someone is painting the side of a red towel",
+    "alt_text": "This may contain: someone is painting the side of a red towel",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [],
+    "suggested_tags": []
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "file_info": {
+    "filename": "87eab1f3acd2.jpg",
+    "source_url": "https://i.pinimg.com/236x/aa/83/12/aa8312417060e4001816233c493475dd.jpg",
+    "pinterest_id": "703756187313776",
+    "file_size": 28257382,
+    "resolution": "6944x9280",
+    "download_timestamp": "2025-09-28T15:46:59.189166"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/703756187313776/",
+    "description": "Small Muggu Design | Simple flower design, Easy rangoli designs videos, Simple rangoli border designs",
+    "alt_text": "Small Muggu Design | Simple flower design, Easy rangoli designs videos, Simple rangoli border designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

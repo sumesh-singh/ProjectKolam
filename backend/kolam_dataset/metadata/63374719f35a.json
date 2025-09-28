@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "63374719f35a.jpg",
+    "source_url": "https://i.pinimg.com/236x/db/91/5e/db915e52afed25cfd9ef6c07b7be71cb.jpg",
+    "pinterest_id": "488359153363925729",
+    "file_size": 413454,
+    "resolution": "1080x1147",
+    "download_timestamp": "2025-09-28T15:58:34.676833"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#534e48",
+      "#989ea8",
+      "#5e6268",
+      "#3f322c",
+      "#c2cbd8"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/488359153363925729/",
+    "description": "Friday Padikolam in 2025 | Padi kolam, Rangoli designs, Save",
+    "alt_text": "Friday Padikolam in 2025 | Padi kolam, Rangoli designs, Save",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "padi",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

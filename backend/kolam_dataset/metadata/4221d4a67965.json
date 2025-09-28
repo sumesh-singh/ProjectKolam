@@ -1,0 +1,69 @@
+{
+  "file_info": {
+    "filename": "4221d4a67965.jpg",
+    "source_url": "https://i.pinimg.com/236x/53/96/f3/5396f311089698a5af50748b97164ae7.jpg",
+    "pinterest_id": "180003317636371409",
+    "file_size": 272393,
+    "resolution": "1126x1126",
+    "download_timestamp": "2025-09-28T15:51:17.188276"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam",
+      "dot kolam"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#b60201",
+      "#faf6f0",
+      "#ac070a",
+      "#c09b96",
+      "#f9fef8"
+    ],
+    "visual_complexity": 0.38,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/180003317636371409/",
+    "description": "\" Dot Kolam, Rangoli, Muggu\" Art Print for Sale by HariniArts | Printable stencil patterns, Rangoli designs with dots, Rangoli side designs",
+    "alt_text": "\" Dot Kolam, Rangoli, Muggu\" Art Print for Sale by HariniArts | Printable stencil patterns, Rangoli designs with dots, Rangoli side designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "dot kolam",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

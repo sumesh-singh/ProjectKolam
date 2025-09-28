@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "7875f82632ac.jpg",
+    "source_url": "https://i.pinimg.com/236x/1a/71/be/1a71be26049be1fe9d4ff4032a0c3ad8.jpg",
+    "pinterest_id": "22025485672840196",
+    "file_size": 352806,
+    "resolution": "768x756",
+    "download_timestamp": "2025-09-28T15:58:00.353091"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#5e554a",
+      "#3b2f2b",
+      "#d7dde9",
+      "#5f5156",
+      "#5c5e67"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/22025485672840196/",
+    "description": "Pin by sukeerthy on Sankranthi muggulu in 2025 | Pattern design drawing, Simple rangoli border designs, Big rangoli designs",
+    "alt_text": "Pin by sukeerthy on Sankranthi muggulu in 2025 | Pattern design drawing, Simple rangoli border designs, Big rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "db811d7d50ef.jpg",
+    "source_url": "https://i.pinimg.com/236x/9f/67/cc/9f67cc93183cbeffca0f1fb5eb2f2af6.jpg",
+    "pinterest_id": "12947917674978788",
+    "file_size": 399721,
+    "resolution": "1080x1080",
+    "download_timestamp": "2025-09-28T15:42:53.822999"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#c8a26a",
+      "#39262c",
+      "#5f4f55",
+      "#352521",
+      "#65564c"
+    ],
+    "visual_complexity": 0.74,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/12947917674978788/",
+    "description": "Jalaram designs 🇨🇦 on Instagram: \"👉 MDF Readymade Rangoli Stencil 👉 MDF Readymade Rangoli Mat Easy to Use Rangoli Template Easy to Fill Rangoli Boards Diwal… | Rangoli designs, Diwali decorations, Simple flower rangoli",
+    "alt_text": "Jalaram designs 🇨🇦 on Instagram: \"👉 MDF Readymade Rangoli Stencil 👉 MDF Readymade Rangoli Mat Easy to Use Rangoli Template Easy to Fill Rangoli Boards Diwal… | Rangoli designs, Diwali decorations, Simple flower rangoli",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

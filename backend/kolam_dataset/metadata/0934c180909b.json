@@ -1,0 +1,71 @@
+{
+  "file_info": {
+    "filename": "0934c180909b.jpg",
+    "source_url": "https://i.pinimg.com/236x/4d/0e/42/4d0e4282172dcdbc3d44f7d092cb9515.jpg",
+    "pinterest_id": "194851121373528750",
+    "file_size": 1471885,
+    "resolution": "2048x2048",
+    "download_timestamp": "2025-09-28T15:54:51.756069"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#72584a",
+      "#422d21",
+      "#cddde3",
+      "#a28c80",
+      "#9ca6ab"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/194851121373528750/",
+    "description": "Padi kolam in 2025 | Rangoli designs with dots, Easy rangoli designs, Very easy rangoli designs",
+    "alt_text": "Padi kolam in 2025 | Rangoli designs with dots, Easy rangoli designs, Very easy rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "padi",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

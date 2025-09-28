@@ -1,0 +1,66 @@
+{
+  "file_info": {
+    "filename": "fd5f20239c07.jpg",
+    "source_url": "https://i.pinimg.com/236x/e2/74/fa/e274fac8d460b6dff2eb425a0615a654.jpg",
+    "pinterest_id": "492649954394923",
+    "file_size": 291934,
+    "resolution": "1080x1920",
+    "download_timestamp": "2025-09-28T15:48:24.763975"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#cdcdd3",
+      "#afaeb5",
+      "#6d5c38",
+      "#2d1f10",
+      "#b29e75"
+    ],
+    "visual_complexity": 0.37,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/492649954394923/",
+    "description": "Simple Rangoli Designs with Dots",
+    "alt_text": "Simple Rangoli Designs with Dots",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "dots",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

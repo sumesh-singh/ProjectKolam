@@ -1,0 +1,66 @@
+{
+  "file_info": {
+    "filename": "6d1a74b9b8fb.jpg",
+    "source_url": "https://i.pinimg.com/236x/0a/7c/b5/0a7cb5f2c637400692bb907e27928ecb.jpg",
+    "pinterest_id": "6896205673437612",
+    "file_size": 200557,
+    "resolution": "736x656",
+    "download_timestamp": "2025-09-28T16:00:10.699070"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "free hand"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#69645f",
+      "#6d6669",
+      "#999aa3",
+      "#8a8682",
+      "#cacdda"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/6896205673437612/",
+    "description": "Pin by Deepa Shetty on Rangoli in 2025 | Simple flower design, Big rangoli designs, Free hand rangoli design",
+    "alt_text": "Pin by Deepa Shetty on Rangoli in 2025 | Simple flower design, Big rangoli designs, Free hand rangoli design",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "free hand",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

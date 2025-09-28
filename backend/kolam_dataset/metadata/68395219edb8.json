@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "68395219edb8.jpg",
+    "source_url": "https://i.pinimg.com/236x/38/89/d6/3889d6894cad0f4a59e503add2a88167.jpg",
+    "pinterest_id": "296463587993321192",
+    "file_size": 232162,
+    "resolution": "1280x720",
+    "download_timestamp": "2025-09-28T15:45:16.822594"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#2c231b",
+      "#93969d",
+      "#606167",
+      "#302528",
+      "#2f2f33"
+    ],
+    "visual_complexity": 0.52,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/296463587993321192/",
+    "description": "Friday special rangoli design 3*2dots small beautiful kolam daily muggulu Anu'swor… in 2025 | Very easy rangoli designs, Simple flower design, Simple rangoli designs images",
+    "alt_text": "Friday special rangoli design 3*2dots small beautiful kolam daily muggulu Anu'swor… in 2025 | Very easy rangoli designs, Simple flower design, Simple rangoli designs images",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

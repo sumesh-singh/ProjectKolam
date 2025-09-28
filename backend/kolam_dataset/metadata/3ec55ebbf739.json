@@ -1,0 +1,63 @@
+{
+  "file_info": {
+    "filename": "3ec55ebbf739.jpg",
+    "source_url": "https://i.pinimg.com/236x/53/f1/28/53f1280dd0f182261fc14a31f0f5020c.jpg",
+    "pinterest_id": "714946509635324004",
+    "file_size": 96320,
+    "resolution": "568x581",
+    "download_timestamp": "2025-09-28T15:51:11.271958"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "dots",
+      "kolam"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#030208",
+      "#000000",
+      "#f4f4f7",
+      "#fafaf9",
+      "#f9fbfa"
+    ],
+    "visual_complexity": 0.47,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/714946509635324004/",
+    "description": "11 - 1 Parallel Dots Kolam Design",
+    "alt_text": "11 - 1 Parallel Dots Kolam Design",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

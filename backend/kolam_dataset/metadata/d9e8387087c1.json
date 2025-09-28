@@ -1,0 +1,54 @@
+{
+  "file_info": {
+    "filename": "d9e8387087c1.jpg",
+    "source_url": "https://i.pinimg.com/236x/ae/aa/06/aeaa0681575b825901092b1faf3be646.jpg",
+    "pinterest_id": "9922061672171088",
+    "file_size": 228392,
+    "resolution": "1080x1355",
+    "download_timestamp": "2025-09-28T15:48:04.077535"
+  },
+  "kolam_properties": {
+    "region": "unclassified",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [],
+    "confidence_score": 0.0,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#4a2214",
+      "#f5efea",
+      "#674e41",
+      "#623422",
+      "#ad9d92"
+    ],
+    "visual_complexity": 0.27,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/9922061672171088/",
+    "description": "Border Design",
+    "alt_text": "Border Design",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [],
+    "suggested_tags": []
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

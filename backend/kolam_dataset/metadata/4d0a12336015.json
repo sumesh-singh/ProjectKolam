@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "4d0a12336015.jpg",
+    "source_url": "https://i.pinimg.com/236x/44/26/4d/44264d3567265809503759cb5b9adc46.jpg",
+    "pinterest_id": "308496643247544847",
+    "file_size": 232486,
+    "resolution": "1280x720",
+    "download_timestamp": "2025-09-28T15:47:28.378053"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#524d49",
+      "#352f2a",
+      "#c9cdd7",
+      "#9a3f6c",
+      "#a7acb3"
+    ],
+    "visual_complexity": 0.44,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/308496643247544847/",
+    "description": "Beautiful border rangoli designs | Friday rangoli | Lotus rangoli | Festival rangoli Simple muggulu in 2025 | Flower rangoli, Diwali craft, Festival rangoli",
+    "alt_text": "Beautiful border rangoli designs | Friday rangoli | Lotus rangoli | Festival rangoli Simple muggulu in 2025 | Flower rangoli, Diwali craft, Festival rangoli",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

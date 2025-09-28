@@ -1,0 +1,54 @@
+{
+  "file_info": {
+    "filename": "ee2b2bdee6b2.jpg",
+    "source_url": "https://i.pinimg.com/videos/thumbnails/originals/d2/9f/26/d29f26a362a965e22f0c1b994d054e2f.0000000.jpg",
+    "pinterest_id": "8092474326485431",
+    "file_size": 140591,
+    "resolution": "1088x1920",
+    "download_timestamp": "2025-09-28T15:38:51.039293"
+  },
+  "kolam_properties": {
+    "region": "unclassified",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [],
+    "confidence_score": 0.0,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#6c222b",
+      "#5d1821",
+      "#7e3339",
+      "#672a2a",
+      "#783636"
+    ],
+    "visual_complexity": 0.01,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/8092474326485431/",
+    "description": "This may contain: a wooden table topped with a white and yellow painted design on top of red wood",
+    "alt_text": "This may contain: a wooden table topped with a white and yellow painted design on top of red wood",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [],
+    "suggested_tags": []
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

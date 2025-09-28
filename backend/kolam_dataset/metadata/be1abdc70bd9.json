@@ -1,0 +1,62 @@
+{
+  "file_info": {
+    "filename": "be1abdc70bd9.jpg",
+    "source_url": "https://i.pinimg.com/236x/e0/52/67/e052676fc63ec70f1ec960150a901db2.jpg",
+    "pinterest_id": "16677461113740512",
+    "file_size": 253220,
+    "resolution": "1080x972",
+    "download_timestamp": "2025-09-28T15:43:40.634627"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#786e5f",
+      "#cbdbe9",
+      "#0c2784",
+      "#135ea3",
+      "#979187"
+    ],
+    "visual_complexity": 0.45,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/16677461113740512/",
+    "description": "#rangoli #art #beautiful #colours #colourart #homedecor #indiantradition #indianart #… | Rangoli designs simple diwali, Easy rangoli designs diwali, Rangoli colours",
+    "alt_text": "#rangoli #art #beautiful #colours #colourart #homedecor #indiantradition #indianart #… | Rangoli designs simple diwali, Easy rangoli designs diwali, Rangoli colours",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

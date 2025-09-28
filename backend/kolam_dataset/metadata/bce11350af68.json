@@ -1,0 +1,56 @@
+{
+  "file_info": {
+    "filename": "bce11350af68.jpg",
+    "source_url": "https://i.pinimg.com/236x/64/d1/5d/64d15d9c337af017972e732be96f9374.jpg",
+    "pinterest_id": "422281210822629",
+    "file_size": 7384068,
+    "resolution": "6000x8000",
+    "download_timestamp": "2025-09-28T15:43:07.679799"
+  },
+  "kolam_properties": {
+    "region": "karnataka",
+    "style": [
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli"
+    ],
+    "confidence_score": 0.4,
+    "requires_manual_validation": true,
+    "color_palette": [],
+    "visual_complexity": 0.05,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/422281210822629/",
+    "description": "Ready Rangoli | Very easy rangoli designs, Simple flower design, Simple rangoli designs images",
+    "alt_text": "Ready Rangoli | Very easy rangoli designs, Simple flower design, Simple rangoli designs images",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "rangoli",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "karnataka",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

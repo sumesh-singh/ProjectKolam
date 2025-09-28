@@ -1,0 +1,69 @@
+{
+  "file_info": {
+    "filename": "8ed9fe2f76a2.jpg",
+    "source_url": "https://i.pinimg.com/236x/3e/ef/1a/3eef1a13332f0664b4248823f66d313d.jpg",
+    "pinterest_id": "180003317645861449",
+    "file_size": 311401,
+    "resolution": "1500x1500",
+    "download_timestamp": "2025-09-28T15:51:13.956339"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "colored"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam",
+      "dot kolam"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#fefdfd",
+      "#b30508",
+      "#b60302",
+      "#fafefc",
+      "#fef6f8"
+    ],
+    "visual_complexity": 0.21,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/180003317645861449/",
+    "description": "Dot Kolam, Red Transparent Kolam, Muggu, Rangoli Sticker in 2025 | Paracord diy, Dots, Vinyl decal stickers",
+    "alt_text": "Dot Kolam, Red Transparent Kolam, Muggu, Rangoli Sticker in 2025 | Paracord diy, Dots, Vinyl decal stickers",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "dot kolam",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

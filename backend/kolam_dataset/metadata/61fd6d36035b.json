@@ -1,0 +1,54 @@
+{
+  "file_info": {
+    "filename": "61fd6d36035b.jpg",
+    "source_url": "https://i.pinimg.com/videos/thumbnails/originals/3e/f8/31/3ef83137c2a42beec6c5eb6d81bcd9b1.0000000.jpg",
+    "pinterest_id": "7951736837319302",
+    "file_size": 377986,
+    "resolution": "1280x2276",
+    "download_timestamp": "2025-09-28T15:52:53.000959"
+  },
+  "kolam_properties": {
+    "region": "unclassified",
+    "style": [
+      "unknown"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [],
+    "confidence_score": 0.0,
+    "requires_manual_validation": true,
+    "color_palette": [
+      "#823a10",
+      "#6a350d",
+      "#73340e",
+      "#6e380e",
+      "#efe1d4"
+    ],
+    "visual_complexity": 0.09,
+    "symmetry": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/7951736837319302/",
+    "description": "This may contain: an orange poster with white lines on it",
+    "alt_text": "This may contain: an orange poster with white lines on it",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [],
+    "suggested_tags": []
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

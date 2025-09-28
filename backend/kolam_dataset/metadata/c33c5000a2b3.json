@@ -1,0 +1,67 @@
+{
+  "file_info": {
+    "filename": "c33c5000a2b3.jpg",
+    "source_url": "https://i.pinimg.com/236x/8e/02/72/8e0272ee42c3fb02b6e3f069c7040d7f.jpg",
+    "pinterest_id": "51932201948705010",
+    "file_size": 1462764,
+    "resolution": "1620x2160",
+    "download_timestamp": "2025-09-28T15:54:58.858231"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "freehand"
+    ],
+    "complexity": "intermediate",
+    "detected_keywords": [
+      "dots",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.6000000000000001,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#1b1912",
+      "#eeead7",
+      "#5b554b",
+      "#a6a294",
+      "#4a504c"
+    ],
+    "visual_complexity": 0.74,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/51932201948705010/",
+    "description": "#kolamenthusiastspongalcontestpadikolam.11/7 straight dots 19-1-2024",
+    "alt_text": "#kolamenthusiastspongalcontestpadikolam.11/7 straight dots 19-1-2024",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "padi"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "freehand"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}

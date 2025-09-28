@@ -1,0 +1,71 @@
+{
+  "file_info": {
+    "filename": "1d69ab5beaa6.jpg",
+    "source_url": "https://i.pinimg.com/236x/51/57/b8/5157b89cc73ab11b92658ae98231d0eb.jpg",
+    "pinterest_id": "54606214229510111",
+    "file_size": 720900,
+    "resolution": "1440x1440",
+    "download_timestamp": "2025-09-28T16:00:12.517156"
+  },
+  "kolam_properties": {
+    "region": "tamil_nadu",
+    "style": [
+      "pulli",
+      "freehand",
+      "colored"
+    ],
+    "complexity": "simple",
+    "detected_keywords": [
+      "rangoli",
+      "dots",
+      "kolam",
+      "padi"
+    ],
+    "confidence_score": 0.8,
+    "requires_manual_validation": false,
+    "color_palette": [
+      "#6c5d53",
+      "#3b2a21",
+      "#b69684",
+      "#e8d2c1",
+      "#663122"
+    ],
+    "visual_complexity": 1.0,
+    "symmetry": {
+      "horizontal": false,
+      "vertical": false
+    }
+  },
+  "pinterest_metadata": {
+    "pin_url": "https://www.pinterest.com/pin/54606214229510111/",
+    "description": "🪔2-ஆம் ஆடி வெள்ளி!🪔\nMy birthday started with a simple messed up padikolam from @8tonty and… in 2025 | Rangoli designs with dots, Big rangoli designs, Easy rangoli designs",
+    "alt_text": "🪔2-ஆம் ஆடி வெள்ளி!🪔\nMy birthday started with a simple messed up padikolam from @8tonty and… in 2025 | Rangoli designs with dots, Big rangoli designs, Easy rangoli designs",
+    "board_name": "",
+    "pinner_username": "",
+    "engagement": {
+      "saves": 0,
+      "comments": 0
+    }
+  },
+  "classification_data": {
+    "method": "keyword_matching",
+    "matched_terms": [
+      "kolam",
+      "dots",
+      "padi",
+      "rangoli"
+    ],
+    "suggested_tags": [
+      "tamil-nadu",
+      "pulli",
+      "freehand",
+      "colored"
+    ]
+  },
+  "processing_status": {
+    "downloaded": true,
+    "metadata_extracted": true,
+    "classified": true,
+    "validated": false
+  }
+}
