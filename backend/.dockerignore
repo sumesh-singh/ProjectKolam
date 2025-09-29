@@ -1,0 +1,14 @@
+# Ignore large and unnecessary files/folders for Docker build context
+backend/models/
+backend/generated_images/
+backend/dataset_analysis/
+backend/temp/
+env/
+rangoli_dataset_complete/
+__pycache__/
+*.pyc
+*.pkl
+*.h5
+*.jpg
+*.png
+*.log

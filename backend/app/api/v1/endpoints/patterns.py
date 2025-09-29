@@ -3,13 +3,7 @@ Pattern recognition API endpoints
 """
 import json
 from typing import Dict, Any
-from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
-from sqlalchemy.ext.asyncio import AsyncSession
-
-from app.core.auth import get_current_user
-from app.db.session import get_db
-from app.models.user import User
-from app.schemas.design import PatternAnalysisCreate
+from fastapi import APIRouter, File, HTTPException, UploadFile, status
 
 router = APIRouter()
 
@@ -17,8 +11,6 @@ router = APIRouter()
 @router.post("/analyze")
 async def analyze_pattern(
     file: UploadFile = File(...),
-    current_user: User = Depends(get_current_user),
-    db: AsyncSession = Depends(get_db),
 ) -> Dict[str, Any]:
     """
     Analyze uploaded Kolam pattern image
@@ -63,8 +55,6 @@ async def analyze_pattern(
 @router.get("/analysis/{analysis_id}")
 async def get_analysis_result(
     analysis_id: str,
-    current_user: User = Depends(get_current_user),
-    db: AsyncSession = Depends(get_db),
 ) -> Dict[str, Any]:
     """
     Get analysis result by ID

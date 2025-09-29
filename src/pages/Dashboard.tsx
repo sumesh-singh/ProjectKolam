@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Upload, Eye, Palette, TrendingUp, Clock, Star, LogOut } from 'lucide-react';
+import { Upload, Eye, Palette, TrendingUp, Clock, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useAuthStore } from '../store/authStore';
 import { usePatternStore } from '../store/patternStore';
 
 const Dashboard: React.FC = () => {
-  const { user, logout } = useAuthStore();
   const { analysisHistory } = usePatternStore();
   const [stats, setStats] = useState({
     totalAnalyses: 0,
@@ -63,23 +61,14 @@ const Dashboard: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8"
+          className="text-center mb-8"
         >
-          <div>
-            <h1 className="font-serif text-3xl md:text-4xl font-bold text-primary-red mb-2">
-              Welcome back, {user?.username}!
-            </h1>
-            <p className="font-sans text-gray-600">
-              Continue your journey in preserving Kolam cultural heritage
-            </p>
-          </div>
-          <button
-            onClick={logout}
-            className="mt-4 md:mt-0 flex items-center bg-gray-100 hover:bg-gray-200 text-gray-700 font-sans font-medium py-2 px-4 rounded-lg transition-colors"
-          >
-            <LogOut className="h-4 w-4 mr-2" />
-            Sign Out
-          </button>
+          <h1 className="font-serif text-3xl md:text-4xl font-bold text-primary-red mb-2">
+            Kolam Pattern Dashboard
+          </h1>
+          <p className="font-sans text-gray-600">
+            Discover and analyze traditional Kolam patterns
+          </p>
         </motion.div>
 
         {/* Stats Cards */}
