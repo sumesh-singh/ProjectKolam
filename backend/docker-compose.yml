@@ -1,82 +1,49 @@
-version: "3.8"
-
+# version: '3.8'
+# version attribute removed as it is obsolete
 services:
-  # PostgreSQL Database
-  postgres:
-    image: postgres:15-alpine
-    environment:
-      POSTGRES_DB: kolam_db
-      POSTGRES_USER: kolam_user
-      POSTGRES_PASSWORD: kolam_password
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U kolam_user -d kolam_db"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
-  # MongoDB Database
-  mongodb:
-    image: mongo:6.0
-    environment:
-      MONGO_INITDB_DATABASE: kolam_db
-    volumes:
-      - mongodb_data:/data/db
-    ports:
-      - "27017:27017"
-    healthcheck:
-      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
-  # Redis Cache
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
-  # FastAPI Backend
-  backend:
+  kolam-ai-api:
     build: .
-    environment:
-      - DEBUG=1
-      - DATABASE_URL=postgresql://kolam_user:kolam_password@postgres:5432/kolam_db
-      - MONGODB_URL=mongodb://mongodb:27017
-      - REDIS_URL=redis://redis:6379
     ports:
       - "8000:8000"
     volumes:
-      - .:/app
-      - /app/__pycache__
-    depends_on:
-      postgres:
-        condition: service_healthy
-      mongodb:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-    command:
-      [
-        "python",
-        "-m",
-        "uvicorn",
-        "app.main:app",
-        "--host",
-        "0.0.0.0",
-        "--port",
-        "8000",
-        "--reload",
-      ]
+      # Mount model files and generated content
+      - ./backend/models:/app/backend/models:ro
+      - ./backend/generated_images:/app/backend/generated_images
+      - ./backend/dataset_analysis:/app/backend/dataset_analysis
+      - ./backend/temp:/app/backend/temp
+    environment:
+      - PYTHONPATH=/app
+      - MODEL_PATH=/app/backend/models
+      - ENVIRONMENT=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health').raise_for_status()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
 
-volumes:
-  postgres_data:
-  mongodb_data:
+  # Optional: Redis for caching (if needed)
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis_data:/data
+  #   restart: unless-stopped
+
+  # Optional: Nginx for reverse proxy and static files
+  # nginx:
+  #   image: nginx:alpine
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./nginx.conf:/etc/nginx/nginx.conf:ro
+  #     - ./backend/generated_images:/usr/share/nginx/html/generated:ro
+  #   depends_on:
+  #     - kolam-ai-api
+  #   restart: unless-stopped
+
+# volumes:
+#   redis_data:

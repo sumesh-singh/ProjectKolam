@@ -4,16 +4,15 @@ Main FastAPI application for Kolam Design Pattern Recognition and Recreation Sys
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.middleware.trustedhost import TrustedHostMiddleware
+from fastapi.middleware.trusted_host import TrustedHostMiddleware
 from fastapi.responses import JSONResponse
 import structlog
 import time
+import os
 
 from app.api.v1.api import api_router
 from app.core.config import settings
 from app.core.logging import setup_logging
-from app.db.session import engine
-from app.db.base import Base
 
 # Setup structured logging
 setup_logging()
@@ -27,15 +26,7 @@ async def lifespan(app: FastAPI):
     Lifespan context manager for FastAPI application
     """
     logger.info("Starting Kolam Design System backend")
-
-    # Create database tables
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
-
-    logger.info("Database tables created/verified")
-
     yield
-
     logger.info("Shutting down Kolam Design System backend")
 
 app = FastAPI(
@@ -52,8 +43,7 @@ app = FastAPI(
 if settings.BACKEND_CORS_ORIGINS:
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=[str(origin)
-                       for origin in settings.BACKEND_CORS_ORIGINS],
+        allow_origins=settings.BACKEND_CORS_ORIGINS,
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
@@ -131,7 +121,11 @@ app.include_router(api_router, prefix=settings.API_V1_STR)
 @app.get("/health")
 async def health_check():
     """Health check endpoint for load balancers and monitoring"""
-    return {"status": "healthy", "service": "kolam-backend"}
+    return {
+        "status": "healthy",
+        "service": "kolam-backend",
+        "message": "Backend is running without database dependencies"
+    }
 
 if __name__ == "__main__":
     import uvicorn

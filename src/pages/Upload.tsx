@@ -1,3 +1,4 @@
+// Upload.tsx
 import React, { useState, useRef } from 'react';
 import { Upload as UploadIcon, Camera, Image, AlertCircle, CheckCircle, Loader2, Download, Edit3 } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -88,16 +89,43 @@ const Upload: React.FC = () => {
 
       const response = await patternApi.analyze(formData);
 
-      if (response.data?.data) {
-        const result = response.data.data as AnalysisResult;
+      if (response.data && 'analysis_id' in response.data) {
+        const result = response.data as unknown as AnalysisResult;
         setAnalysisResult(result);
         navigate('/dashboard'); // Redirect to dashboard after successful analysis
       }
     } catch (error: any) {
-      console.error('Analysis error:', error);
-      const errorMessage = error.response?.data?.detail || 'Analysis failed. Please try again.';
-      setStoreError(errorMessage);
-    } finally {
+       console.error('Analysis error:', error);
+
+       // Enhanced error logging
+       if (error.response) {
+         console.error('API Error Response:', {
+           status: error.response.status,
+           data: error.response.data,
+           headers: error.response.headers
+         });
+       } else if (error.request) {
+         console.error('Network Error:', error.request);
+       } else {
+         console.error('Request Setup Error:', error.message);
+       }
+
+       // Better error messages based on error type
+       let errorMessage = 'Analysis failed. Please try again.';
+       if (error.response?.status === 413) {
+         errorMessage = 'Image file is too large. Please choose a smaller image.';
+       } else if (error.response?.status === 415) {
+         errorMessage = 'Invalid file type. Please upload a valid image file (JPEG, PNG).';
+       } else if (error.response?.status === 500) {
+         errorMessage = 'Server error. Please try again later.';
+       } else if (error.response?.status === 0 || !error.response) {
+         errorMessage = 'Network error. Please check your connection and try again.';
+       } else if (error.response?.data?.detail) {
+         errorMessage = error.response.data.detail;
+       }
+
+       setStoreError(errorMessage);
+     } finally {
       setAnalyzing(false);
     }
   };
