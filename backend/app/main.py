@@ -4,7 +4,7 @@ Main FastAPI application for Kolam Design Pattern Recognition and Recreation Sys
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.middleware.trusted_host import TrustedHostMiddleware
+from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from fastapi.responses import JSONResponse
 import structlog
 import time

@@ -13,13 +13,19 @@ interface AnalysisResult {
     rotational_order: number;
     reflection_axes: number;
     complexity_score: number;
+    fractal_dimension?: number;
   };
   cultural_context: {
     ceremonial_use: string;
     seasonal_relevance: string;
     symbolic_meaning: string;
+    traditional_name?: string;
   };
-  processing_time_ms: number;
+  metadata?: {
+    image_dimensions?: [number, number];
+    color_mode?: string;
+    analysis_version?: string;
+  };
 }
 
 interface PatternState {

@@ -5,19 +5,26 @@ This module demonstrates how to use the enhanced computer vision preprocessing
 techniques with the improved CNN model for superior kolam pattern recognition.
 """
 
-from kolam_cv_enhancement import KolamCVEnhancement
-from kolam_cnn_model import KolamCNNModel
 from kolam_data_pipeline import KolamDataPipeline
+from kolam_cnn_model import KolamCNNModel
+from kolam_cv_enhancement import KolamCVEnhancement
 import os
 import sys
-import json
 import logging
 from datetime import datetime
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
+import numpy as np
+import tensorflow as tf
+import tensorflow as tf
+-  # Add backend to path for imports
+-sys.path.append('backend')
 
-# Add backend to path for imports
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s:%(message)s'
+)
 sys.path.append('backend')
 
 

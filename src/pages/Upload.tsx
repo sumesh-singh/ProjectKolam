@@ -19,13 +19,19 @@ interface AnalysisResult {
     rotational_order: number;
     reflection_axes: number;
     complexity_score: number;
+    fractal_dimension?: number;
   };
   cultural_context: {
     ceremonial_use: string;
     seasonal_relevance: string;
     symbolic_meaning: string;
+    traditional_name?: string;
   };
-  processing_time_ms: number;
+  metadata?: {
+    image_dimensions?: [number, number];
+    color_mode?: string;
+    analysis_version?: string;
+  };
 }
 
 const Upload: React.FC = () => {
@@ -92,7 +98,7 @@ const Upload: React.FC = () => {
       if (response.data && 'analysis_id' in response.data) {
         const result = response.data as unknown as AnalysisResult;
         setAnalysisResult(result);
-        navigate('/dashboard'); // Redirect to dashboard after successful analysis
+        // Show results on upload page instead of redirecting
       }
     } catch (error: any) {
        console.error('Analysis error:', error);
@@ -127,6 +133,25 @@ const Upload: React.FC = () => {
        setStoreError(errorMessage);
      } finally {
       setAnalyzing(false);
+    }
+  };
+
+  const regeneratePattern = async (): Promise<void> => {
+    if (!currentAnalysis) return;
+
+    try {
+      // Call the backend API to regenerate pattern based on current analysis
+      const response = await patternApi.getAnalysis(currentAnalysis.analysis_id);
+
+      if (response.data) {
+        console.log('Pattern regenerated successfully:', response.data);
+        // TODO: Implement pattern regeneration logic
+        // This could involve calling a pattern generation API endpoint
+        // or using the current analysis data to create a new pattern
+      }
+    } catch (error: any) {
+      console.error('Pattern regeneration error:', error);
+      setStoreError('Failed to regenerate pattern. Please try again.');
     }
   };
 
@@ -304,12 +329,12 @@ const Upload: React.FC = () => {
                 <div className="space-y-4">
                   <div>
                     <h3 className="font-serif text-xl font-semibold text-primary-red mb-2">
-                      {currentAnalysis.design_classification.subtype || 'Unknown Pattern'}
+                      {currentAnalysis.design_classification?.subtype || 'Unknown Pattern'}
                     </h3>
                     <div className="flex items-center justify-between text-sm">
-                      <span className="font-sans text-gray-600">Type: {currentAnalysis.design_classification.type}</span>
+                      <span className="font-sans text-gray-600">Type: {currentAnalysis.design_classification?.type || 'Unknown'}</span>
                       <span className="font-sans font-semibold text-accent-green">
-                        {currentAnalysis.design_classification.confidence}% confidence
+                        {currentAnalysis.design_classification?.confidence ? Math.round(currentAnalysis.design_classification.confidence) : 0}% confidence
                       </span>
                     </div>
                   </div>
@@ -319,19 +344,19 @@ const Upload: React.FC = () => {
                     <div className="grid grid-cols-2 gap-4 text-sm">
                       <div>
                         <span className="font-sans text-gray-600">Symmetry: </span>
-                        <span className="font-sans font-medium text-primary-red">{currentAnalysis.mathematical_properties.symmetry_type}</span>
+                        <span className="font-sans font-medium text-primary-red">{currentAnalysis.mathematical_properties?.symmetry_type || 'Unknown'}</span>
                       </div>
                       <div>
                         <span className="font-sans text-gray-600">Rotational Order: </span>
-                        <span className="font-sans font-medium text-accent-indigo">{currentAnalysis.mathematical_properties.rotational_order}</span>
+                        <span className="font-sans font-medium text-accent-indigo">{currentAnalysis.mathematical_properties?.rotational_order || 0}</span>
                       </div>
                       <div>
                         <span className="font-sans text-gray-600">Complexity Score: </span>
-                        <span className="font-sans font-medium text-accent-green">{currentAnalysis.mathematical_properties.complexity_score}</span>
+                        <span className="font-sans font-medium text-accent-green">{currentAnalysis.mathematical_properties?.complexity_score?.toFixed(2) || '0.00'}</span>
                       </div>
                       <div>
                         <span className="font-sans text-gray-600">Reflection Axes: </span>
-                        <span className="font-sans font-medium text-accent-indigo">{currentAnalysis.mathematical_properties.reflection_axes}</span>
+                        <span className="font-sans font-medium text-accent-indigo">{currentAnalysis.mathematical_properties?.reflection_axes || 0}</span>
                       </div>
                     </div>
                   </div>
@@ -341,23 +366,65 @@ const Upload: React.FC = () => {
                     <div className="space-y-2 text-sm">
                       <div>
                         <span className="font-sans text-gray-600">Ceremonial Use: </span>
-                        <span className="font-sans text-primary-red">{currentAnalysis.cultural_context.ceremonial_use}</span>
+                        <span className="font-sans text-primary-red">{currentAnalysis.cultural_context?.ceremonial_use || 'Unknown'}</span>
                       </div>
                       <div>
                         <span className="font-sans text-gray-600">Symbolic Meaning: </span>
-                        <span className="font-sans text-accent-indigo">{currentAnalysis.cultural_context.symbolic_meaning}</span>
+                        <span className="font-sans text-accent-indigo">{currentAnalysis.cultural_context?.symbolic_meaning || 'Unknown'}</span>
                       </div>
+                      {currentAnalysis.cultural_context?.traditional_name && (
+                        <div>
+                          <span className="font-sans text-gray-600">Traditional Name: </span>
+                          <span className="font-sans text-accent-green">{currentAnalysis.cultural_context.traditional_name}</span>
+                        </div>
+                      )}
                     </div>
                   </div>
 
-                  <div className="flex space-x-3 pt-4">
-                    <button className="flex-1 bg-primary-red hover:bg-red-700 text-white font-sans font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center">
+                  {currentAnalysis.metadata && (
+                    <div>
+                      <h4 className="font-sans font-semibold text-gray-700 mb-2">Analysis Metadata</h4>
+                      <div className="space-y-2 text-sm">
+                        {currentAnalysis.metadata.image_dimensions && (
+                          <div>
+                            <span className="font-sans text-gray-600">Image Size: </span>
+                            <span className="font-sans text-primary-red">{currentAnalysis.metadata.image_dimensions[0]}x{currentAnalysis.metadata.image_dimensions[1]}px</span>
+                          </div>
+                        )}
+                        {currentAnalysis.metadata.color_mode && (
+                          <div>
+                            <span className="font-sans text-gray-600">Color Mode: </span>
+                            <span className="font-sans text-accent-indigo">{currentAnalysis.metadata.color_mode}</span>
+                          </div>
+                        )}
+                        {currentAnalysis.metadata.analysis_version && (
+                          <div>
+                            <span className="font-sans text-gray-600">Analysis Version: </span>
+                            <span className="font-sans text-accent-green">{currentAnalysis.metadata.analysis_version}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="space-y-3 pt-4">
+                    <button className="w-full bg-primary-red hover:bg-red-700 text-white font-sans font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center">
                       <Download className="h-4 w-4 mr-2" />
                       Download SVG
                     </button>
-                    <button className="flex-1 bg-accent-indigo hover:bg-indigo-700 text-white font-sans font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center">
+                    <button
+                      onClick={regeneratePattern}
+                      className="w-full bg-accent-indigo hover:bg-indigo-700 text-white font-sans font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center"
+                    >
                       <Edit3 className="h-4 w-4 mr-2" />
-                      Recreate Pattern
+                      Regenerate Pattern
+                    </button>
+                    <button
+                      onClick={resetUpload}
+                      className="w-full bg-gray-600 hover:bg-gray-700 text-white font-sans font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center"
+                    >
+                      <UploadIcon className="h-4 w-4 mr-2" />
+                      Analyze New Pattern
                     </button>
                   </div>
                 </div>

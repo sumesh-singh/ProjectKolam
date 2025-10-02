@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { usePatternStore } from '../store/patternStore';
 
 const Dashboard: React.FC = () => {
-  const { analysisHistory } = usePatternStore();
+  const { currentAnalysis, analysisHistory } = usePatternStore();
   const [stats, setStats] = useState({
     totalAnalyses: 0,
     patternsCreated: 0,
@@ -47,9 +47,9 @@ const Dashboard: React.FC = () => {
 
   const recentActivity = analysisHistory.slice(0, 3).map((analysis, index) => ({
     id: analysis.analysis_id,
-    title: analysis.design_classification.subtype || 'Unknown Pattern',
-    type: analysis.design_classification.type,
-    confidence: analysis.design_classification.confidence,
+    title: analysis.design_classification?.subtype || 'Unknown Pattern',
+    type: analysis.design_classification?.type || 'Unknown',
+    confidence: analysis.design_classification?.confidence || 0,
   }));
 
   return (

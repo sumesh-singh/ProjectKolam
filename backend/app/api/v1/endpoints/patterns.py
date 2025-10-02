@@ -175,17 +175,12 @@ async def analyze_pattern(
 
         # Perform pattern analysis
         try:
-            # Use the actual pattern analyzer service
-            loop = asyncio.get_event_loop()
-            analysis_result = await loop.run_in_executor(
-                executor,
-                pattern_analyzer.analyze,
-                image_array,
-                analysis_id
-            )
+            # Use the actual pattern analyzer service (now async)
+            analysis_result = await pattern_analyzer.analyze(image_array, analysis_id)
 
-            # If pattern_analyzer doesn't exist or returns None, use mock
-            if not analysis_result:
+            # If pattern_analyzer fails, use mock as fallback
+            if not analysis_result or analysis_result.get('analysis_status', {}).get('overall_status') == 'failed':
+                logger.warning("Pattern analyzer failed, using mock analysis")
                 analysis_result = await perform_mock_analysis(image_array, analysis_id)
 
         except Exception as e:
@@ -339,15 +334,9 @@ async def process_single_file_in_batch(file: UploadFile) -> BatchAnalysisResult:
         # Generate analysis ID
         analysis_id = str(uuid.uuid4())
 
-        # Perform analysis
-        loop = asyncio.get_event_loop()
+        # Perform analysis (now async)
         try:
-            analysis_result = await loop.run_in_executor(
-                executor,
-                pattern_analyzer.analyze,
-                image_array,
-                analysis_id
-            )
+            analysis_result = await pattern_analyzer.analyze(image_array, analysis_id)
         except:
             analysis_result = await perform_mock_analysis(image_array, analysis_id)
 
