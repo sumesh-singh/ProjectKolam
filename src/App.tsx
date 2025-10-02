@@ -8,8 +8,12 @@ import Upload from './pages/Upload';
 import Gallery from './pages/Gallery';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import { useLenis } from './hooks/useLenis';
 
 function App(): React.JSX.Element {
+  // Initialize smooth scrolling
+  useLenis();
+
   return (
     <Router>
       <div className="min-h-screen bg-cream bg-kolam-pattern">

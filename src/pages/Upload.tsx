@@ -1,3 +1,4 @@
+// Upload.tsx
 import React, { useState, useRef } from 'react';
 import { Upload as UploadIcon, Camera, Image, AlertCircle, CheckCircle, Loader2, Download, Edit3 } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -88,8 +89,8 @@ const Upload: React.FC = () => {
 
       const response = await patternApi.analyze(formData);
 
-      if (response.data?.data) {
-        const result = response.data.data as AnalysisResult;
+      if (response.data && 'analysis_id' in response.data) {
+        const result = response.data as unknown as AnalysisResult;
         setAnalysisResult(result);
         navigate('/dashboard'); // Redirect to dashboard after successful analysis
       }

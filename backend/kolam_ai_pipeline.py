@@ -5,6 +5,7 @@ This module integrates the CNN and GAN models to provide a complete pipeline for
 kolam pattern recognition and recreation, forming the core AI system.
 """
 
+from kolam_cv_enhancement import KolamCVEnhancement
 import os
 import json
 import numpy as np
@@ -47,6 +48,7 @@ class KolamAIPipeline:
         self.data_pipeline = KolamDataPipeline(img_height, img_width)
         self.cnn_model = KolamCNNModel(img_height, img_width)
         self.gan_model = KolamGAN(img_height, img_width)
+        self.cv_enhancer = KolamCVEnhancement()
 
         # Pipeline state
         self.is_trained = False
@@ -88,9 +90,17 @@ class KolamAIPipeline:
         # Create visualizations
         self.data_pipeline.visualize_dataset()
 
-        # Prepare data for CNN
-        cnn_data = self.data_pipeline.prepare_for_cnn(
-            batch_size=self.config['batch_size'])
+        # Prepare data for CNN (use multi-channel if configured)
+        use_multi_channel = False
+        if getattr(self, 'cnn_model', None) and getattr(self.cnn_model, 'config', None):
+            use_multi_channel = self.cnn_model.config.get(
+                'use_multi_channel', False)
+        if use_multi_channel:
+            cnn_data = self.data_pipeline.prepare_for_cnn_multi_channel(
+                batch_size=self.config['batch_size'])
+        else:
+            cnn_data = self.data_pipeline.prepare_for_cnn(
+                batch_size=self.config['batch_size'])
 
         # Prepare data for GAN
         gan_data = self.data_pipeline.prepare_for_gan()
@@ -139,7 +149,12 @@ class KolamAIPipeline:
         self.cnn_model.num_classes = self.data_pipeline.num_classes
 
         # Build and train CNN model
-        self.cnn_model.build_model()
+        use_multi_channel = self.cnn_model.config.get(
+            'use_multi_channel', False)
+        if use_multi_channel:
+            self.cnn_model.build_enhanced_model()
+        else:
+            self.cnn_model.build_model()
         history = self.cnn_model.train_model(
             X_train, y_train_cat, X_val, y_val_cat)
 
@@ -281,6 +296,15 @@ class KolamAIPipeline:
             raise ValueError(
                 "Pipeline not trained. Call train_full_pipeline() first.")
 
+        logger.info(f"Recognizing pattern: {image_path}")
+
+        # Step 1: Apply computer vision preprocessing
+        try:
+            cv_results = self.cv_enhancer.preprocess_image(image_path)
+        except Exception as e:
+            logger.error(f"CV preprocessing failed for {image_path}: {str(e)}")
+            raise ValueError(f"Failed to preprocess image: {str(e)}") from e
+
         # Use CNN model for recognition
         results = self.cnn_model.predict(image_path)
 
@@ -292,6 +316,63 @@ class KolamAIPipeline:
             'timestamp': datetime.now().isoformat()
         }
 
+        return enhanced_results
+
+    def recognize_pattern_enhanced(self, image_path: str) -> Dict:
+        """
+        Enhanced pattern recognition using computer vision preprocessing.
+
+        Args:
+            image_path: Path to the image file
+
+        Returns:
+            Enhanced recognition results with CV preprocessing
+        """
+        if not self.is_trained:
+            raise ValueError(
+                "Pipeline not trained. Call train_full_pipeline() first.")
+
+        logger.info(f"Enhanced pattern recognition for: {image_path}")
+
+        # Step 1: Apply computer vision preprocessing
+        cv_results = self.cv_enhancer.preprocess_image(image_path)
+
+        # Step 2: Use enhanced multi-channel image for recognition
+        # Use the combined multi-channel image
+        if 'combined' not in cv_results:
+            raise ValueError(
+                "CV preprocessing did not return 'combined' image")
+        enhanced_image = cv_results['combined']
+
+        # Convert to format expected by CNN (add batch dimension and normalize)
+        enhanced_image = np.expand_dims(enhanced_image, axis=0)
+
+        # Step 3: Get CNN prediction
+        results = self.cnn_model.predict_from_array(enhanced_image)
+
+        # Step 4: Extract additional CV features
+        if 'features' not in cv_results:
+            raise ValueError("CV preprocessing did not return 'features'")
+        cv_features = cv_results['features']
+
+        # Step 5: Create comprehensive results
+        enhanced_results = {
+            'recognition': results,
+            'cv_preprocessing': {
+                'edges_detected': cv_features['num_components'],
+                'symmetry_score': cv_features['symmetry_score'],
+                'pattern_complexity': len(cv_features['component_sizes']),
+                'detected_lines': len(cv_features['detected_lines']),
+                'detected_circles': len(cv_features['detected_circles'])
+            },
+            'predicted_class_name': self.data_pipeline.class_names[results['predicted_class']] if results['predicted_class'] < len(self.data_pipeline.class_names) else 'Unknown',
+            'confidence_percentage': results['confidence'] * 100,
+            'processing_method': 'computer_vision_enhanced',
+            'timestamp': datetime.now().isoformat()
+        }
+
+        logger.info(
+            f"Enhanced recognition completed. Confidence: {enhanced_results['confidence_percentage']:.2f}%")
         return enhanced_results
 
     def generate_kolam_patterns(self, num_patterns: int = 1, class_condition: int = None) -> List[Dict]:
@@ -435,18 +516,17 @@ Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
 ## Dataset Information
 - Total Images: {self.training_history.get('dataset_info', {}).get('total_samples', 'N/A')}
-- Number of Classes: {self.training_history.get('dataset_info', {}).get('num_classes', 'N/A')}
-- Image Shape: {self.training_history.get('dataset_info', {}).get('image_shape', 'N/A')}
+- Number of Classes: {self.training_history.get('dataset_info', {}).get('analysis', {}).get('num_classes', 'N/A')}
 
 ## CNN Model Performance
-- Final Training Accuracy: {self.training_history.get('cnn_results', {}).get('final_train_accuracy', 'N/A'):.4f}
-- Final Validation Accuracy: {self.training_history.get('cnn_results', {}).get('final_val_accuracy', 'N/A'):.4f}
-- Test Accuracy: {self.training_history.get('cnn_results', {}).get('cnn_evaluation', {}).get('test_accuracy', 'N/A'):.4f}
+- Final Training Accuracy: {self.training_history.get('cnn_results', {}).get('final_train_accuracy', 0):.4f}
+- Final Validation Accuracy: {self.training_history.get('cnn_results', {}).get('final_val_accuracy', 0):.4f}
+- Test Accuracy: {self.training_history.get('cnn_results', {}).get('cnn_evaluation', {}).get('test_accuracy', 0):.4f}
 
 ## GAN Model Training
 - Epochs Trained: {self.training_history.get('gan_results', {}).get('gan_epochs_trained', 'N/A')}
-- Final Discriminator Loss: {self.training_history.get('gan_results', {}).get('final_d_loss', 'N/A'):.4f}
-- Final Generator Loss: {self.training_history.get('gan_results', {}).get('final_g_loss', 'N/A'):.4f}
+- Final Discriminator Loss: {self.training_history.get('gan_results', {}).get('final_d_loss', 0):.4f}
+- Final Generator Loss: {self.training_history.get('gan_results', {}).get('final_g_loss', 0):.4f}
 
 ## Model Files
 - CNN Model: {os.path.join(self.config['model_dir'], 'kolam_cnn_final.h5')}

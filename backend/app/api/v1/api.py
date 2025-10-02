@@ -1,16 +1,24 @@
 """
-Main API router
+Main API router that combines all endpoint routers
 """
 from fastapi import APIRouter
-
-# Import only the modules that exist and don't have database dependencies
-from app.api.v1.endpoints import patterns
+from app.api.v1.endpoints import patterns, designs, health
 
 api_router = APIRouter()
 
-# Include only the working endpoint routers
+# Include all endpoint routers
 api_router.include_router(
-    patterns.router, prefix="/patterns", tags=["patterns"])
-
-# Note: kolam_ai and users endpoints are disabled due to missing dependencies
-# They can be re-enabled once the required models and database are properly configured
+    patterns.router,
+    prefix="/patterns",
+    tags=["patterns"]
+)
+api_router.include_router(
+    designs.router,
+    prefix="/designs",
+    tags=["designs"]
+)
+api_router.include_router(
+    health.router,
+    prefix="/health",
+    tags=["health"]
+)

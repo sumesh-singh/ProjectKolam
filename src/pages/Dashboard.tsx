@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Upload, Eye, Palette, TrendingUp, Clock, Star } from 'lucide-react';
+import { Upload, Eye, Palette, TrendingUp, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { usePatternStore } from '../store/patternStore';
 
@@ -50,7 +50,6 @@ const Dashboard: React.FC = () => {
     title: analysis.design_classification.subtype || 'Unknown Pattern',
     type: analysis.design_classification.type,
     confidence: analysis.design_classification.confidence,
-    timestamp: new Date().toLocaleDateString(), // Mock timestamp
   }));
 
   return (
@@ -173,12 +172,8 @@ const Dashboard: React.FC = () => {
                           {activity.title}
                         </p>
                         <p className="font-sans text-sm text-gray-600">
-                          {activity.type} • {activity.confidence}% confidence
+                          {activity.type} • {Math.round(activity.confidence * 100)}% confidence
                         </p>
-                        <div className="flex items-center mt-1">
-                          <Clock className="h-3 w-3 text-gray-400 mr-1" />
-                          <span className="font-sans text-xs text-gray-500">{activity.timestamp}</span>
-                        </div>
                       </div>
                     </motion.div>
                   ))}

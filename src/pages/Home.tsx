@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Upload, Eye, Download, Palette, ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useParallax } from '../hooks/useParallax';
 
 const Home: React.FC = () => {
   const fadeInUp = {
@@ -9,7 +10,6 @@ const Home: React.FC = () => {
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.6 }
   };
-
   const staggerContainer = {
     animate: {
       transition: {
@@ -17,6 +17,9 @@ const Home: React.FC = () => {
       }
     }
   };
+
+  // Parallax effects for different sections
+  const featuresParallax = useParallax(0.5);
 
   const steps = [
     {
@@ -52,7 +55,7 @@ const Home: React.FC = () => {
       <section className="relative bg-gradient-to-br from-primary-red via-red-600 to-red-800 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="absolute inset-0 bg-kolam-pattern opacity-10"></div>
-        
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <motion.div 
             className="text-center"
@@ -193,6 +196,36 @@ const Home: React.FC = () => {
               viewport={{ once: true }}
               className="relative"
             >
+              {/* Floating background elements with parallax */}
+              <motion.div
+                className="absolute -top-10 -right-10 w-32 h-32 opacity-10"
+                style={{ y: featuresParallax.y }}
+                initial={{ rotate: 0 }}
+                animate={{ rotate: 360 }}
+                transition={{
+                  duration: 30,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+              >
+                <svg viewBox="0 0 100 100" className="w-full h-full">
+                  <g fill="none" stroke="currentColor" strokeWidth="1">
+                    <circle cx="50" cy="50" r="40" />
+                    <circle cx="50" cy="50" r="25" />
+                    <circle cx="50" cy="50" r="10" />
+                    {Array.from({ length: 6 }, (_, i) => (
+                      <line
+                        key={i}
+                        x1="50"
+                        y1="10"
+                        x2="50"
+                        y2="90"
+                        transform={`rotate(${i * 60} 50 50)`}
+                      />
+                    ))}
+                  </g>
+                </svg>
+              </motion.div>
               <div className="bg-white rounded-2xl shadow-2xl p-8 border-4 border-primary-gold">
                 <div className="flex items-center justify-center h-64 bg-cream rounded-xl border-2 border-dashed border-gray-300">
                   <div className="text-center">

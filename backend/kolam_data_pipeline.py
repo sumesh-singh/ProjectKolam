@@ -20,6 +20,9 @@ import seaborn as sns
 from typing import Tuple, List, Dict, Optional, Union
 from collections import Counter
 import logging
+import cv2
+from skimage import filters, exposure
+from scipy import ndimage
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -57,7 +60,9 @@ class KolamDataPipeline:
             'random_seed': 42,
             'apply_augmentation': True,
             'normalize_images': True,
-            'balance_classes': False
+            'balance_classes': False,
+            'use_multi_channel': False,
+            'num_input_channels': 3
         }
 
     def load_dataset(self, dataset_path: str, metadata_path: str = None) -> Dict:
@@ -520,6 +525,207 @@ class KolamDataPipeline:
         processed_images = self.normalize_images(self.images, method='tanh')
 
         return processed_images
+
+    def create_edge_map(self, image: np.ndarray) -> np.ndarray:
+        """
+        Create edge map using Sobel operator.
+
+        Args:
+            image: Input RGB image (H, W, 3)
+
+        Returns:
+            Edge map (H, W, 1) normalized to [0, 1]
+        """
+        # Convert to grayscale
+        gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+
+        # Apply Sobel edge detection
+        sobel_x = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=3)
+        sobel_y = cv2.Sobel(gray, cv2.CV_64F, 0, 1, ksize=3)
+
+        # Compute gradient magnitude
+        edge_map = np.sqrt(sobel_x**2 + sobel_y**2)
+
+        # Normalize to [0, 1]
+        max_val = np.max(edge_map)
+        if max_val > 0:
+            edge_map = edge_map / max_val
+        else:
+            edge_map = np.zeros_like(edge_map)
+
+        return edge_map.astype('float32')
+
+    def create_enhanced_luminance(self, image: np.ndarray) -> np.ndarray:
+        """
+        Create enhanced luminance using CLAHE (Contrast Limited Adaptive Histogram Equalization).
+
+        Args:
+            image: Input RGB image (H, W, 3)
+
+        Returns:
+            Enhanced luminance (H, W, 1) normalized to [0, 1]
+        """
+        # Convert to grayscale
+        gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+
+        # Apply CLAHE
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+        enhanced = clahe.apply(gray)
+
+        # Normalize to [0, 1]
+        enhanced = enhanced.astype('float32') / 255.0
+
+        return enhanced
+
+    def create_feature_map(self, image: np.ndarray) -> np.ndarray:
+        """
+        Create handcrafted feature map using gradient magnitude.
+
+        Args:
+            image: Input RGB image (H, W, 3)
+
+        Returns:
+            Feature map (H, W, 1) normalized to [0, 1]
+        """
+        # Convert to grayscale
+        gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+
+        # Apply Gaussian blur to reduce noise
+        blurred = cv2.GaussianBlur(gray, (5, 5), 0)
+
+        # Compute Laplacian
+        laplacian = cv2.Laplacian(blurred, cv2.CV_64F)
+
+        # Take absolute value and normalize
+        feature_map = np.abs(laplacian)
+        max_val = np.max(feature_map)
+        if max_val > 0:
+            feature_map = feature_map / max_val
+        else:
+            feature_map = np.zeros_like(feature_map)
+
+        return feature_map.astype('float32')
+
+    def create_multi_channel_image(self, image: np.ndarray) -> np.ndarray:
+        """
+        Create 6-channel image by combining RGB + Edges + Enhanced + Features.
+
+        Args:
+            image: Input RGB image (H, W, 3) normalized to [0, 1]
+
+        Returns:
+            Multi-channel image (H, W, 6)
+        """
+        # Ensure input is in [0, 1] range
+        if np.max(image) > 1.0:
+            image = image / 255.0
+
+        # Convert to uint8 for OpenCV operations
+        image_uint8 = (image * 255).astype('uint8')
+
+        # Create additional channels
+        edge_map = self.create_edge_map(image_uint8)
+        enhanced_luminance = self.create_enhanced_luminance(image_uint8)
+        feature_map = self.create_feature_map(image_uint8)
+
+        # Stack channels: RGB + Edges + Enhanced + Features
+        multi_channel = np.concatenate([
+            image,  # RGB channels (H, W, 3)
+            edge_map[..., np.newaxis],  # Edge map (H, W, 1)
+            # Enhanced luminance (H, W, 1)
+            enhanced_luminance[..., np.newaxis],
+            feature_map[..., np.newaxis]  # Feature map (H, W, 1)
+        ], axis=-1)
+
+        return multi_channel.astype('float32')
+
+    def preprocess_multi_channel(self, images: np.ndarray) -> np.ndarray:
+        """
+        Preprocess images to create multi-channel input.
+
+        Args:
+            images: Input images (N, H, W, 3)
+
+        Returns:
+            Multi-channel images (N, H, W, 6)
+        """
+        logger.info(
+            f"Creating multi-channel images from {len(images)} input images...")
+
+        multi_channel_images = []
+        for i, image in enumerate(images):
+            multi_channel = self.create_multi_channel_image(image)
+            multi_channel_images.append(multi_channel)
+
+            if (i + 1) % 100 == 0:
+                logger.info(f"Processed {i + 1}/{len(images)} images")
+
+        result = np.array(multi_channel_images)
+        logger.info(
+            f"Multi-channel preprocessing completed. Output shape: {result.shape}")
+        return result
+
+    def prepare_for_cnn_multi_channel(self, batch_size: int = 32) -> Dict:
+        """
+        Prepare dataset for CNN training with multi-channel input.
+
+        Args:
+            batch_size: Batch size for datasets
+
+        Returns:
+            Dictionary containing prepared datasets and information
+        """
+        # Split dataset
+        splits = self.split_dataset()
+
+        # Create multi-channel images
+        X_train_multi = self.preprocess_multi_channel(splits['X_train'])
+        X_val_multi = self.preprocess_multi_channel(splits['X_val'])
+        X_test_multi = self.preprocess_multi_channel(splits['X_test'])
+
+        # Create TensorFlow datasets
+        train_dataset = self.create_tf_datasets(
+            X_train_multi, splits['y_train'],
+            batch_size=batch_size, shuffle=True
+        )
+
+        val_dataset = self.create_tf_datasets(
+            X_val_multi, splits['y_val'],
+            batch_size=batch_size, shuffle=False
+        )
+
+        test_dataset = self.create_tf_datasets(
+            X_test_multi, splits['y_test'],
+            batch_size=batch_size, shuffle=False
+        )
+
+        # Calculate class weights for imbalanced datasets
+        class_weights = class_weight.compute_class_weight(
+            'balanced',
+            classes=np.unique(splits['y_train']),
+            y=splits['y_train']
+        )
+        class_weights = dict(enumerate(class_weights))
+
+        preparation_info = {
+            'train_dataset': train_dataset,
+            'val_dataset': val_dataset,
+            'test_dataset': test_dataset,
+            'class_weights': class_weights,
+            'num_train_batches': len(X_train_multi) // batch_size,
+            'num_val_batches': len(X_val_multi) // batch_size,
+            'num_test_batches': len(X_test_multi) // batch_size,
+            'splits': {
+                'X_train': X_train_multi,
+                'X_val': X_val_multi,
+                'X_test': X_test_multi,
+                'y_train': splits['y_train'],
+                'y_val': splits['y_val'],
+                'y_test': splits['y_test']
+            }
+        }
+
+        return preparation_info
 
 
 def main():
