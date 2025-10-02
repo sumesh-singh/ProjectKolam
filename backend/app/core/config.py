@@ -46,7 +46,7 @@ class Settings(BaseSettings):
     BACKEND_CORS_ORIGINS: List[str] = [
         "http://localhost:3000",  # React dev server
         "http://localhost:5173",  # Vite dev server
-        "http://localhost:5174",  # Vite dev server (current)
+        "http://localhost:5174",  # Vite dev server
         "http://localhost:8000",  # FastAPI
     ]
 
