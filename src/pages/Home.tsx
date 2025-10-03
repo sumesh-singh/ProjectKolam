@@ -1,8 +1,10 @@
+//Home.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Upload, Eye, Download, Palette, ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useParallax } from '../hooks/useParallax';
+
 
 const Home: React.FC = () => {
   const fadeInUp = {
