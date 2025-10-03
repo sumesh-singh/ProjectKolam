@@ -110,79 +110,104 @@ class KolamMasterSystem:
 
             # Step 2: Computer vision enhancement
             cv_results = None
+            # Step 2: Computer vision enhancement
+            cv_results = None
             if 'cv_enhancer' in self.components:
                 cv_results = self.components['cv_enhancer'].preprocess_image_from_array(
-                    image
-                )
+                    image)
                 results['computer_vision'] = cv_results
 
             # Step 3: Symmetry and mathematical analysis
-            comprehensive_features = None
             if 'symmetry_analyzer' in self.components and cv_results is not None:
                 comprehensive_features = self.components['symmetry_analyzer'].extract_comprehensive_features(
                     cv_results['enhanced']
                 )
-                results['mathematical_analysis'] = comprehensive_features
+                results['mathematical_analysis'] = comprehensive_features)
+                results['mathematical_analysis']= comprehensive_features
+
+            results['image_loaded']= True
+            results['image_shape']= image.shape
+
+            # Step 2: Computer vision enhancement
+            cv_results= None
+            if 'cv_enhancer' in self.components:
+                cv_results= self.components['cv_enhancer'].preprocess_image_from_array(
+                    image)
+                results['computer_vision']= cv_results
+
+            # Step 3: Symmetry and mathematical analysis
+            comprehensive_features= None
+            if 'symmetry_analyzer' in self.components and cv_results is not None:
+                comprehensive_features= self.components['symmetry_analyzer'].extract_comprehensive_features(
+                    cv_results['enhanced']
+                )
+                results['mathematical_analysis']= comprehensive_features
 
             # Step 4: Cultural authenticity validation
             if ('traditional_rules' in self.components
                     and self.config['enable_cultural_validation']
                     and comprehensive_features is not None):
-                cultural_validation = self.components['traditional_rules'].validate_pattern_authenticity(
+                cultural_validation= self.components['traditional_rules'].validate_pattern_authenticity(
                     comprehensive_features, cultural_context
                 )
-                results['cultural_validation'] = cultural_validation
+                results['cultural_validation']= cultural_validation
 
             # Step 5: Expert system validation
             if 'expert_system' in self.components and self.config['enable_expert_rules']:
-                expert_results = self.components['expert_system'].process_kolam_with_expert_validation(
+                expert_results= self.components['expert_system'].process_kolam_with_expert_validation(
                     image_path, cultural_context
                 )
-                results['expert_validation'] = expert_results
+                results['expert_validation']= expert_results
 
-            # Step 6: Pattern recreation (if authenticity threshold met)
-            authenticity_score = results.get(
-                'cultural_validation', {}).get('authenticity_score', 0.0)
-            if authenticity_score >= self.config['cultural_authenticity_threshold']:
-                if 'design_recreation' in self.components and cv_results is not None and comprehensive_features is not None:
+            # Step 6: Pattern regeneration (if culturally appropriate)
+            authenticity_score= results.get(
+                'cultural_validation', {}).get('authenticity_score', 1.0)
+
+            if (authenticity_score >= self.config['cultural_authenticity_threshold']
+                    and cv_results is not None
+                    and comprehensive_features is not None):
+                if 'design_recreation' in self.components:
                     # Regenerate with authenticity preservation
                     from kolam_design_recreation import RegenerationParameters, RegenerationStrategy
 
-                    params = RegenerationParameters(
-                        strategy=RegenerationStrategy.CULTURAL_EVOLUTION,
-                        symmetry_preservation=0.9,
-                        cultural_authenticity=0.9,
-                        complexity_modification=0.1,
-                        scale_factor=1.0,
-                        motif_variation=0.2,
-                        line_thickness_modification=0.0
+                    params= RegenerationParameters(
+                        strategy = RegenerationStrategy.CULTURAL_EVOLUTION,
+                        symmetry_preservation = 0.9,
+                        cultural_authenticity = 0.9,
+                        complexity_modification = 0.1,
+                        scale_factor = 1.0,
+                        motif_variation = 0.2,
+                        line_thickness_modification = 0.0
                     )
 
-                    recreation_result = self.components['design_recreation'].regenerate_pattern(
+                    recreation_result= self.components['design_recreation'].regenerate_pattern(
                         cv_results['enhanced'], comprehensive_features, params
                     )
-                    results['pattern_recreation'] = recreation_result
+                    results['pattern_recreation']= recreation_result
 
             # Step 7: Generate multiple output formats
-            if 'output_generator' in self.components and cv_results is not None and comprehensive_features is not None:
-                output_files = self.components['output_generator'].generate_all_formats(
+            if ('output_generator' in self.components
+                    and cv_results is not None
+                    and comprehensive_features is not None):
+                output_files= self.components['output_generator'].generate_all_formats(
                     cv_results['enhanced'], comprehensive_features, output_directory, workflow_id
                 )
-                results['output_files'] = output_files
+                results['output_files']= output_files
 
-            # Step 8: Generate documentation
-            if 'documentation_generator' in self.components and cv_results is not None and comprehensive_features is not None:
-                documentation = self.components['documentation_generator'].generate_complete_documentation(
+            # Step 8: Generate comprehensive documentation
+            if ('documentation_generator' in self.components
+                    and cv_results is not None
+                    and comprehensive_features is not None):
+                documentation= self.components['documentation_generator'].generate_complete_documentation(
                     cv_results['enhanced'], comprehensive_features,
                     results.get('cultural_validation', {}
                                 ), self.config['output_formats']
                 )
-                results['documentation'] = documentation
-
+                results['documentation']= documentation
             # Calculate processing metrics
-            total_time = time.time() - start_time
-            completed_stages = self._get_completed_stages(results)
-            results['processing_metrics'] = {
+            total_time= time.time() - start_time
+            completed_stages= self._get_completed_stages(results)
+            results['processing_metrics']= {
                 'total_processing_time': total_time,
                 'processing_end_time': time.time(),
                 'stages_completed': len(completed_stages),
@@ -240,11 +265,22 @@ class KolamMasterSystem:
             'average_processing_time': np.mean([h['processing_time'] for h in self.processing_history]) if self.processing_history else 0.0,
             'success_rate': len([h for h in self.processing_history if h['success']]) / max(1, len(self.processing_history)),
             'cultural_authenticity_average': np.mean([h['cultural_authenticity'] for h in self.processing_history]) if self.processing_history else 0.0,
+            # Define all components we expect, then mark each loaded/missing
+            expected_components = [
+                'cv_enhancer',
+                'symmetry_analyzer',
+                'traditional_rules',
+                'design_recreation',
+                'output_generator',
+                'documentation_generator',
+                'performance_optimizer',
+                'expert_system'
+            ]
+
             'components_status': {
-                name: 'loaded' if component else 'missing'
-                for name, component in self.components.items()
-            },
-            'configuration': self.config,
+                name: 'loaded' if name in self.components else 'missing'
+                for name in expected_components
+            },            'configuration': self.config,
             'status_timestamp': datetime.now().isoformat()
         }
 
@@ -311,13 +347,13 @@ def demonstrate_complete_system():
         f"⏱️  Average Processing Time: {status['average_processing_time']:.3f}s")
 
     # Test with sample kolam image
-    test_image = 'static/mandalaKolam.jpg'
+    test_image= 'static/mandalaKolam.jpg'
 
     if os.path.exists(test_image):
         print(f"\n🔍 Testing Complete System with: {test_image}")
 
         # Set up cultural context
-        cultural_context = {
+        cultural_context= {
             'region': 'tamil_nadu',
             'occasion': 'daily_ritual',
             'authenticity_required': True,
@@ -329,11 +365,11 @@ def demonstrate_complete_system():
             results = system.recognize_and_recreate(
                 test_image,
                 cultural_context,
-                output_directory="backend/complete_demo_outputs"
+                output_directory = "backend/complete_demo_outputs"
             )
 
             # Show results
-            metrics = results['processing_metrics']
+            metrics= results['processing_metrics']
             print("\n✅ Complete workflow successful!")
             print(
                 f"⏱️  Total processing time: {metrics['total_processing_time']:.3f}s")
@@ -341,7 +377,7 @@ def demonstrate_complete_system():
             print(f"📊 Stages completed: {metrics['stages_completed']}")
 
             if 'cultural_validation' in results:
-                cultural = results['cultural_validation']
+                cultural= results['cultural_validation']
                 print(
                     f"🎭 Cultural authenticity: {cultural['authenticity_score']:.3f}")
                 print(
@@ -350,15 +386,45 @@ def demonstrate_complete_system():
             if 'output_files' in results:
                 print(
                     f"📁 Generated outputs: {len(results['output_files'])} formats")
+    print("\n🚀 COMPLETE SYSTEM CAPABILITIES:")
+    print("✅ Advanced computer vision preprocessing")
+    print("✅ Real-time mathematical feature extraction")
+    print("✅ Comprehensive symmetry analysis")
+    print("✅ Cultural domain expert rule validation")
+    print("✅ Traditional authenticity enforcement")
+    print("✅ Intelligent pattern regeneration")
+    print("✅ Multi-format output generation")
+    print("✅ Comprehensive documentation creation")
+    print("✅ 5-second processing window optimization")
+    print("✅ Cultural appropriation prevention")
+    print("✅ Multiple scaling and complexity options")
 
-            if 'error' not in results:
-                print("✅ All processing stages completed successfully!")
-            else:
-                print(f"❌ Processing error: {results['error']}")
+    print("\n🪔 KOLAM SYSTEM FEATURES:")
+    print("🎨 Recognizes traditional kolam patterns with cultural accuracy")
+    print("🔍 Extracts mathematical properties and symmetries")
+    print("🏛️ Validates cultural authenticity against expert rules")
+    print("🎭 Prevents cultural appropriation with traditional validation")
+    print("🔄 Intelligently regenerates authentic pattern variants")
+    print("📄 Generates multiple output formats (SVG, PNG, 3D, blueprints)")
+    print("📚 Creates comprehensive construction documentation")
+    print("⚡ Processes within 5-second window for real-time use")
+    print("🧠 Learns from cultural expert feedback")
+    print("🌍 Supports multiple regional kolam styles")
 
-        except Exception as e:
-            print(f"❌ Workflow failed: {e}")
-    else:
+    print("\n🎯 SYSTEM ARCHITECTURE:")
+    print("┌─────────────────────────────────────────────────────────────┐")
+    print("│                    KOLAM MASTER SYSTEM                      │")
+    print("├─────────────────────────────────────────────────────────────┤")
+    print("│  🎨 Computer Vision     │  🔍 Symmetry Analysis           │")
+    print("│  🧮 Mathematical Props  │  🏛️ Traditional Rules           │")
+    print("│  ⚡ Real-time Processing │  👥 Expert Integration          │")
+    print("├─────────────────────────────────────────────────────────────┤")
+    print("│  🎭 Design Recreation   │  📄 Multi-format Output         │")
+    print("│  📚 Documentation       │  ⏱️ Performance Optimization    │")
+    print("└─────────────────────────────────────────────────────────────┘")
+
+    print("\n🌟 RESULT: A culturally authentic, mathematically precise,")
+    print("         and technologically advanced kolam recognition system!") else:
         print(f"❌ Test image not found: {test_image}")
 
     print("

@@ -15,6 +15,7 @@ class DesignClassification(BaseModel):
     subtype: str
     region: str
     confidence: float
+    classification_method: Optional[str] = None
 
 
 class MathematicalProperties(BaseModel):
@@ -26,6 +27,10 @@ class MathematicalProperties(BaseModel):
     reflection_axes: int
     complexity_score: float
     fractal_dimension: Optional[float] = None
+    lacunarity: Optional[float] = None
+    correlation_dimension: Optional[float] = None
+    connectivity_index: Optional[float] = None
+    grid_complexity: Optional[float] = None
 
 
 class CulturalContext(BaseModel):
@@ -43,10 +48,19 @@ class AnalysisResult(BaseModel):
     Complete pattern analysis result
     """
     analysis_id: str
+    processing_time_ms: Optional[int] = None
+    analysis_version: Optional[str] = None
+    analysis_status: Optional[Dict[str, str]] = None
     design_classification: DesignClassification
+    symmetry_analysis: Optional[Dict[str, Any]] = None
+    cnn_classification: Optional[Dict[str, Any]] = None
     mathematical_properties: MathematicalProperties
     cultural_context: CulturalContext
     metadata: Optional[Dict[str, Any]] = None
+    symmetries_detected: Optional[Dict[str, Any]] = None
+    dominant_symmetries: Optional[List[str]] = None
+    pattern_complexity_score: Optional[float] = None
+    error: Optional[str] = None
 
 
 class PatternAnalysisRequest(BaseModel):

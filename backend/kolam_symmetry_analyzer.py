@@ -75,7 +75,7 @@ class KolamSymmetryAnalyzer:
     def __init__(self):
         """Initialize the symmetry analyzer."""
         self.symmetry_tolerance = 0.05  # 5% tolerance for symmetry detection
-        self.min_symmetry_strength = 0.7  # Minimum strength for valid symmetry
+        self.min_symmetry_strength = 0.5  # Minimum strength for valid symmetry
         self.fractal_box_sizes = [2, 4, 8, 16, 32, 64, 128]
 
     def _ensure_binary(self, image: np.ndarray) -> np.ndarray:
@@ -137,7 +137,10 @@ class KolamSymmetryAnalyzer:
             symmetries_found[SymmetryType.TRANSLATIONAL] = translational_symmetry
 
         logger.info(
-            f"Symmetry analysis completed. Found {len(symmetries_found)} symmetry types")
+            f"Symmetry analysis completed. Found {len(symmetries_found)} symmetry types: {list(symmetries_found.keys())}")
+        for sym_type, analysis in symmetries_found.items():
+            logger.info(
+                f"  {sym_type.value}: confidence={analysis.confidence_score:.3f}, order={analysis.symmetry_order}, strength={analysis.symmetry_strength:.3f}")
         return symmetries_found
 
     def _analyze_reflection_symmetries(self, binary: np.ndarray) -> Dict[SymmetryType, SymmetryAnalysis]:
@@ -173,10 +176,12 @@ class KolamSymmetryAnalyzer:
             # Flip top-bottom
             flipped = np.flipud(binary)
             center = (height // 2, width // 2)
+            symmetry_type = SymmetryType.REFLECTION_HORIZONTAL
         elif axis == 'vertical':
             # Flip left-right
             flipped = np.fliplr(binary)
             center = (height // 2, width // 2)
+            symmetry_type = SymmetryType.REFLECTION_VERTICAL
         elif axis == 'diagonal':
             # Transpose for diagonal reflection
             if height != width:
@@ -184,15 +189,14 @@ class KolamSymmetryAnalyzer:
                 size = min(height, width)
                 binary_square = cv2.resize(binary, (size, size))
                 flipped = binary_square.T
+                # Resize back for comparison
+                flipped = cv2.resize(flipped, (width, height))
             else:
                 flipped = binary.T
             center = (height // 2, width // 2)
+            symmetry_type = SymmetryType.REFLECTION_DIAGONAL
         else:
             raise ValueError(f"Unknown axis: {axis}")
-
-        # Ensure same shape for comparison
-        if binary.shape != flipped.shape:
-            flipped = cv2.resize(flipped, (width, height))
 
         # Calculate similarity
         difference = np.abs(binary.astype(np.float32) -
@@ -208,7 +212,7 @@ class KolamSymmetryAnalyzer:
         violation_points = np.where(violation_mask)
 
         return SymmetryAnalysis(
-            symmetry_type=SymmetryType[f"REFLECTION_{axis.upper()}"],
+            symmetry_type=symmetry_type,
             confidence_score=similarity,
             symmetry_order=2,
             symmetry_angle=0.0,
@@ -444,9 +448,6 @@ class KolamSymmetryAnalyzer:
             # Find local maxima above threshold
             peaks = []
             threshold = 0.7
-
-            # Use scipy for peak detection
-            from scipy import ndimage
 
             # Apply Gaussian filter to smooth
             autocorr_smooth = ndimage.gaussian_filter(autocorr_norm, sigma=1)
@@ -1156,7 +1157,7 @@ def main():
     print(
         f"Pattern Complexity Score: {features['pattern_complexity_score']:.3f}")
 
-    print("\nSymmetry analyzer is ready for advanced kolam pattern analysis!")
+    print("\n✓ Symmetry analyzer is ready for advanced kolam pattern analysis!")
 
 
 if __name__ == "__main__":

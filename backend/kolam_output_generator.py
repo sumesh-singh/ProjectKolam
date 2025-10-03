@@ -23,7 +23,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-class OutputFormat(str, Enum):
+class OutputFormat:
     """Supported output formats."""
     SVG = "svg"
     PNG = "png"
@@ -31,7 +31,6 @@ class OutputFormat(str, Enum):
     OBJ = "obj"
     STL = "stl"
     BLUEPRINT = "blueprint"
-    PDF = "pdf"
 
 
 class KolamOutputGenerator:
@@ -205,12 +204,16 @@ class KolamOutputGenerator:
         """Convert pattern to SVG path data."""
         paths = []
 
-        # Find contours in pattern
-        contours, hierarchy = cv2.findContours(
+        # Find contours in pattern (compatible with OpenCV 3.x and 4.x)
+        result = cv2.findContours(
             pattern.astype(np.uint8),
             cv2.RETR_EXTERNAL,
             cv2.CHAIN_APPROX_SIMPLE
         )
+        if len(result) == 2:
+            contours, hierarchy = result
+        else:
+            _, contours, hierarchy = result
 
         for contour in contours:
             if len(contour) < 2:

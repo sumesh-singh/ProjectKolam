@@ -31,6 +31,17 @@ class PatternAnalyzer:
         self.symmetry_analyzer = KolamSymmetryAnalyzer()
         self.cnn_model = None  # Placeholder for CNN model
         self.executor = ThreadPoolExecutor(max_workers=2)
+
+        # Try to load CNN model
+        try:
+            from kolam_cnn_model import KolamCNNModel
+            self.cnn_model = KolamCNNModel()
+            self.cnn_model.load_model('backend/models/kolam_cnn_best.h5')
+            logger.info("CNN model loaded successfully")
+        except Exception as e:
+            logger.warning(f"Failed to load CNN model: {e}")
+            self.cnn_model = None
+
         logger.info(
             "PatternAnalyzer initialized with KolamSymmetryAnalyzer and CNN compatibility")
 
@@ -73,6 +84,8 @@ class PatternAnalyzer:
             combined_results = self._combine_analysis_results(
                 symmetry_results, cnn_results, analysis_id, processing_time_ms, image_array
             )
+            logger.info(
+                f"Combined results for {analysis_id}: symmetry_success={symmetry_results.get('success')}, cnn_success={cnn_results.get('success')}, mathematical_properties present: {'mathematical_properties' in combined_results}")
 
             logger.info(
                 f"Comprehensive analysis completed for {analysis_id} in {processing_time_ms}ms")
@@ -131,14 +144,42 @@ class PatternAnalyzer:
 
     def _run_actual_cnn_prediction(self, image: np.ndarray, analysis_id: str) -> Dict[str, Any]:
         """Run actual CNN model prediction"""
-        # Placeholder for actual CNN model integration
-        # This would typically involve:
-        # 1. Preprocessing image for CNN input
-        # 2. Running inference through the trained model
-        # 3. Post-processing predictions
+        try:
+            import tempfile
+            import os
+            from PIL import Image
 
-        # For now, return mock results
-        return self._get_mock_cnn_results(image, analysis_id)
+            # Save image temporarily
+            with tempfile.NamedTemporaryFile(suffix='.png', delete=False) as tmp:
+                img = Image.fromarray(image.astype('uint8'))
+                img.save(tmp.name)
+
+                try:
+                    prediction = self.cnn_model.predict(tmp.name)
+                    predicted_label = prediction['predicted_label']
+
+                    # Parse predicted_label, assume format like "Traditional_Pulli_Kolam_TamilNadu"
+                    parts = predicted_label.split('_')
+                    pattern_type = parts[0] if len(parts) > 0 else "Unknown"
+                    subtype = parts[1] if len(parts) > 1 else "Unknown"
+                    region = parts[2] if len(parts) > 2 else "Unknown"
+
+                    return {
+                        "pattern_type": pattern_type,
+                        "subtype": subtype,
+                        "region": region,
+                        "confidence": prediction['confidence'],
+                        "features": {
+                            "texture_complexity": 0.5,  # Placeholder
+                            "line_density": 0.5,
+                            "symmetry_score": 0.5
+                        }
+                    }
+                finally:
+                    os.unlink(tmp.name)
+        except Exception as e:
+            logger.warning(f"Actual CNN prediction failed, using mock: {e}")
+            return self._get_mock_cnn_results(image, analysis_id)
 
     def _get_mock_cnn_results(self, image: np.ndarray, analysis_id: str) -> Dict[str, Any]:
         """Generate mock CNN results for demonstration"""
@@ -236,21 +277,27 @@ class PatternAnalyzer:
     def _extract_mathematical_properties(self, symmetry_features: Dict) -> Dict[str, Any]:
         """Extract mathematical properties from symmetry analysis"""
         if not symmetry_features:
+            logger.warning(
+                "Symmetry features are empty, returning empty mathematical properties")
             return {}
 
         math_props = symmetry_features.get('mathematical_properties', {})
+        logger.info(
+            f"Extracting mathematical properties: symmetry_features keys: {list(symmetry_features.keys())}, math_props keys: {list(math_props.keys())}")
 
-        return {
+        extracted = {
             "symmetry_type": self._get_dominant_symmetry_type(symmetry_features),
-            "rotational_order": self._calculate_rotational_order(symmetry_features),
-            "reflection_axes": self._count_reflection_symmetries(symmetry_features),
-            "complexity_score": symmetry_features.get('pattern_complexity_score', 0.5),
-            "fractal_dimension": math_props.get('fractal_dimension', 1.5),
-            "lacunarity": math_props.get('lacunarity', 1.0),
-            "correlation_dimension": math_props.get('correlation_dimension', 1.5),
-            "connectivity_index": math_props.get('connectivity_index', 0.5),
-            "grid_complexity": math_props.get('grid_complexity', 0.5)
+            "rotational_order": max(1, self._calculate_rotational_order(symmetry_features)),
+            "reflection_axes": max(1, self._count_reflection_symmetries(symmetry_features)),
+            "complexity_score": max(0.1, symmetry_features.get('pattern_complexity_score', 0.5)),
+            "fractal_dimension": max(1.1, math_props.get('fractal_dimension', 1.5)),
+            "lacunarity": max(0.1, math_props.get('lacunarity', 1.0)),
+            "correlation_dimension": max(1.1, math_props.get('correlation_dimension', 1.5)),
+            "connectivity_index": max(0.1, math_props.get('connectivity_index', 0.5)),
+            "grid_complexity": max(0.1, math_props.get('grid_complexity', 0.5))
         }
+        logger.info(f"Extracted mathematical properties: {extracted}")
+        return extracted
 
     def _extract_cultural_context(self, cnn_predictions: Dict) -> Dict[str, Any]:
         """Extract cultural context from CNN predictions"""

@@ -230,43 +230,23 @@ class KolamPerformanceOptimizer:
             }
 
     def _execute_with_timeout(self, func: Callable, args: Tuple, timeout: float):
-        """Execute function with timeout using multiprocessing for forcible termination."""
-        # Create a queue for communication between processes
-        result_queue = multiprocessing.Queue()
-
-        def target():
-            """Target function to run in separate process."""
+        """Execute function with timeout using ThreadPoolExecutor."""
+        from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
+        result = None
+        exception = None
+        with ThreadPoolExecutor(max_workers=1) as executor:
+            future = executor.submit(func, *args)
             try:
-                result = func(*args)
-                result_queue.put(('success', result))
+                result = future.result(timeout=timeout)
+            except FuturesTimeoutError:
+                logger.warning(f"Thread execution exceeded {timeout}s timeout")
+                future.cancel()
+                raise TimeoutError(f"Execution exceeded {timeout}s timeout")
             except Exception as e:
-                result_queue.put(('exception', e))
-
-        # Create and start the process
-        process = multiprocessing.Process(target=target)
-        process.start()
-
-        # Wait for completion with timeout
-        process.join(timeout)
-
-        if process.is_alive():
-            # Process is still running - forcibly terminate it
-            logger.warning(
-                f"Forcibly terminating process after {timeout}s timeout")
-            process.terminate()
-            process.join(1)  # Wait 1 second for clean termination
-            if process.is_alive():
-                process.kill()  # Force kill if still alive
-            raise TimeoutError(f"Execution exceeded {timeout}s timeout")
-
-        # Check if result is available
-        if not result_queue.empty():
-            status, result = result_queue.get()
-            if status == 'exception':
-                raise result
-            return result
-        else:
-            raise TimeoutError("No result returned from process")
+                exception = e
+        if exception:
+            raise exception
+        return result
 
     def _execute_parallel_stage(self, stage: ProcessingStage, *args, timeout: float) -> Dict:
         """Execute stage in parallel for better performance."""
@@ -584,7 +564,7 @@ class AsyncKolamProcessor:
         if cache_key in self.results_cache:
             return self.results_cache[cache_key]
 
-        # Run optimizer in thread pool to avoid blocking
+        # Execute in thread pool to avoid blocking
         loop = asyncio.get_event_loop()
         result = await loop.run_in_executor(
             None, self.optimizer.optimize_pipeline, image_path, features
@@ -622,23 +602,33 @@ class AsyncKolamProcessor:
 def main():
     """Demonstrate the performance optimizer."""
     # Initialize optimizer
-    optimizer = KolamPerformanceOptimizer()
 
-    print("KOLAM PERFORMANCE OPTIMIZATION ENGINE")
-    print("="*50)
-    print(
-        f"Target Processing Time: {optimizer.target_processing_time} seconds")
-    print(
-        f"Parallel Processing: {optimizer.optimization_strategies['parallel_processing']}")
-    print(f"Total Stages: {len(optimizer.processing_stages)}")
+    async def process_batch_async(self, image_paths: List[str]) -> List[Dict]:
+        """Process multiple images asynchronously."""
+        tasks = []
 
-    # Show stage breakdown
-    print("\nProcessing Stages:")
-    for stage in optimizer.processing_stages:
-        print(
-            f"  • {stage.name}: {stage.estimated_time:.1f}s (Priority: {stage.priority})")
+        for image_path in image_paths:
+            task = asyncio.create_task(self.process_async(image_path))
+            tasks.append(task)
 
-    # Test with sample image
+        # Wait for all tasks to complete
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+
+        # Handle exceptions
+        processed_results = []
+        for i, result in enumerate(results):
+            if isinstance(result, Exception):
+                logger.error(
+                    f"Error processing image {image_paths[i]}: {result}")
+                processed_results.append({
+                    'success': False,
+                    'error': str(result),
+                    'image_path': image_paths[i]
+                })
+            else:
+                processed_results.append(result)
+
+        return processed_results
     test_image = 'static/mandalaKolam.jpg'
 
     if os.path.exists(test_image):

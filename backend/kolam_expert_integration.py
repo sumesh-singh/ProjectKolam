@@ -6,15 +6,13 @@
 This module integrates cultural domain expert knowledge with real-time mathematical
 feature extraction for authentic kolam pattern recognition and recreation.
 """
-
 import json
 import numpy as np
 from typing import Dict, List, Tuple, Optional, Union
 import logging
 from datetime import datetime
 import time
-
-try:
+import cv2try:
     import cv2
 except ImportError as e:
     raise ImportError(
